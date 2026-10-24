@@ -1,0 +1,20 @@
+# P2's Bananarang must fly out from P2 and come back to P2 (user: bananas spawned from P2 then flew to P1)
+chars Monke Monke
+wait 2
+godp1
+godp2
+open
+wait 1
+unweapon p1 Bananarang
+clear
+spawn p2 Goblin 4 8
+wait 1
+shot banana_out
+wait 0.6
+shot banana_back
+wait 0.6
+shot banana_back2
+wait 3
+kills
+shot banana_late
+quit

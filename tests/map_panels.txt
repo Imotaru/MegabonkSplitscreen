@@ -1,0 +1,25 @@
+# Both players' map + stats panels, before any fighting (a level-up screen would close P2's)
+chars Monke Monke
+godp1
+wait 2
+tome p2 Shield 2
+go p2 1 0
+wait 3
+stop p2
+wait 1
+shot outline
+map p1 on
+wait 1
+mapcheck
+shot map_p1
+map p2 on
+wait 1
+mapcheck
+shot map_both
+map p1 off
+wait 1
+mapcheck
+shot map_p2
+map p2 off
+wait 1
+quit

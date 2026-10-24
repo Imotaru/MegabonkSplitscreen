@@ -1,0 +1,30 @@
+# Regen for P2 with no enemies, P1's shield must stay 0 when only P2 takes Shield tomes; then both get a shield
+# and both get hit, for a side-by-side look at the shield effects
+chars Monke Monke
+wait 2
+tome p2 Regeneration 3
+tome p2 Shield 3
+wait 2
+stat p1 Shield
+stat p2 Shield
+snap tomes given
+hurt p2 80
+hurt p2 60
+snap hurt
+wait 5
+snap after 5s
+wait 5
+snap after 10s
+# side by side: P1 gets the same shield, both are hit through the shield
+tome p1 Shield 3
+wait 3
+stat p1 Shield
+godp1
+spawn p1 Skeleton 3 4
+spawn p2 Skeleton 3 4
+wait 2
+shot shields_hit
+wait 1
+shot shields_hit2
+snap shields
+quit

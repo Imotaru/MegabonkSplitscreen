@@ -1,0 +1,17 @@
+# Merged view (players together): where the minimap sits; then exploding spiders at P2 only (P1 far away)
+chars Monke Monke
+godp1
+wait 3
+shot merged
+go p2 1 0
+wait 3
+stop p2
+wait 1
+snap before blast
+spawn p2 BoomerSpider 4 2
+wait 2
+shot blast_start
+wait 4
+snap after blast
+shot blast
+quit

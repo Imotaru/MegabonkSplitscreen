@@ -1,0 +1,35 @@
+# Tornadoes for P2 (user: environmental stuff like tornadoes doesn't affect P2): a tornado moved between the players
+# (both alive, 8 m apart) - both players' speed logged; then P1 down and again.
+chars Monke Monke
+wait 2
+godp1
+godp2
+open
+clear
+clearloot
+nopowerups
+place 8
+wait 1
+tornado 2
+wait 1
+tornado near
+wait 0.4
+tornadoes
+wait 0.6
+tornadoes
+wait 1
+tornadoes
+shot tornado_both
+wait 3
+open
+place 8
+wait 1
+kill p1
+wait 1.5
+tornado near
+wait 0.4
+tornadoes
+wait 0.6
+tornadoes
+shot tornado_p1down
+quit

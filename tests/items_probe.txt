@@ -1,0 +1,41 @@
+# Item routing probe: P2's items tick, proc and hear P2's own events; P1's items stay P1's; separate HUD rows.
+# P1: IceCube (on hit), EnergyCore (tick). P2: Bonker (on hit), Cactus (P2 damaged), Borgar (kill), GoldenSneakers
+# (tick, gold for walking), EnergyCore (tick). Cactus: P1 hurt first (P2's Cactus must stay quiet), then P2 hurt.
+chars Monke Monke
+wait 2
+godp1
+godp2
+open
+clear
+clearloot
+item p1 IceCube
+item p1 EnergyCore
+item p2 Bonker
+item p2 Cactus
+item p2 Borgar
+item p2 GoldenSneakers
+item p2 EnergyCore
+wait 0.5
+items
+itemscan
+shot items_hud
+hurt p1 5
+wait 0.5
+dmgsources
+hurt p2 5
+wait 0.5
+dmgsources
+spawn p1 Skeleton 6 5
+spawn p2 Skeleton 6 5
+wait 6
+spawn p1 Skeleton 6 5
+spawn p2 Skeleton 6 5
+go p2 1 0
+wait 6
+stop p2
+dmg items
+dmgsources
+health
+gold
+shot items_hud_end
+quit

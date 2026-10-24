@@ -1,0 +1,52 @@
+﻿chars Monke Megachad tier 1 map Forest
+# User: XP from pots P2 breaks goes to P1; P2's clock doesn't slow time like P1's (it should work as if P1 took it,
+# its look on both halves). Players 40 m apart. Pots: P2 breaks one (gems should fly to P2), then P1 one. Clock: enemies
+# around both, P2 takes the clock: P1's statuses (TimeFreeze?), enemy speed, screenshot of both halves; P1's for comparison.
+wait 2
+godp1
+godp2
+xp on
+open
+clear
+clearloot
+place 40
+wait 1
+gems before pots
+pot p2
+wait 0.5
+p2interact
+wait 0.3
+gems P2's pot +0.3s
+pickupsnear p2
+wait 1.5
+gems P2's pot +1.8s
+pickupsnear p2
+pot p1
+wait 0.5
+p1interact
+wait 0.3
+gems P1's pot +0.3s
+pickupsnear p1
+wait 1.5
+# ---- clock
+spawn p1 Skeleton 6 8
+spawn p2 Skeleton 6 8
+wait 2
+statuses
+pickup p2 Time
+wait 0.8
+statuses
+shot clock_p2
+wait 4
+statuses
+wait 6
+clear
+spawn p1 Skeleton 6 8
+spawn p2 Skeleton 6 8
+wait 2
+pickup p1 Time
+wait 0.8
+statuses
+shot clock_p1
+wait 2
+quit

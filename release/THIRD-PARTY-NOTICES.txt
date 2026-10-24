@@ -1,0 +1,31 @@
+Third-party components included in this package
+================================================
+
+MegabonkSplitscreen runs on the BepInEx mod loader. The loader and the libraries it ships are included unchanged, as
+distributed by the BepInEx project. Each keeps its own license; the source code of each is available at the address
+given. (Licenses as published by each project - check the project page for the authoritative text.)
+
+Component                         Files (in this package)                      License        Source
+--------------------------------  -------------------------------------------  -------------  ------------------------------------------------
+BepInEx 6 (IL2CPP)                BepInEx\core\BepInEx.*                        LGPL-2.1       https://github.com/BepInEx/BepInEx
+Unity Doorstop                    winhttp.dll, doorstop_config.ini              LGPL-2.1       https://github.com/NeighTools/UnityDoorstop
+.NET runtime                      dotnet\                                       MIT            https://github.com/dotnet/runtime
+Il2CppInterop                     BepInEx\core\Il2CppInterop.*                  LGPL-3.0       https://github.com/BepInEx/Il2CppInterop
+HarmonyX                          BepInEx\core\0Harmony.dll                     MIT            https://github.com/BepInEx/HarmonyX
+MonoMod                           BepInEx\core\MonoMod.*                        MIT            https://github.com/MonoMod/MonoMod
+Mono.Cecil                        BepInEx\core\Mono.Cecil*.dll                  MIT            https://github.com/jbevain/cecil
+Cpp2IL / LibCpp2IL / StableName   BepInEx\core\Cpp2IL.Core.dll, LibCpp2IL.dll,  MIT            https://github.com/SamboyCoding/Cpp2IL
+  / WasmDisassembler                StableNameDotNet.dll, WasmDisassembler.dll
+Disarm                            BepInEx\core\Disarm.dll                       MIT            https://github.com/SamboyCoding/Disarm
+AsmResolver                       BepInEx\core\AsmResolver*.dll                 MIT            https://github.com/Washi1337/AsmResolver
+AssetRipper (CIL, Primitives)     BepInEx\core\AssetRipper.*.dll                MIT            https://github.com/AssetRipper
+Iced                              BepInEx\core\Iced.dll                         MIT            https://github.com/icedland/iced
+Capstone .NET binding             BepInEx\core\Gee.External.Capstone.dll        MIT            https://github.com/9ee1/Capstone.NET
+Dobby                             BepInEx\core\dobby.dll                        Apache-2.0     https://github.com/jmpews/Dobby
+SemanticVersioning                BepInEx\core\SemanticVersioning.dll           MIT            https://github.com/adamreeve/semver.net
+
+The LGPL-licensed components (BepInEx, Unity Doorstop, Il2CppInterop) are unmodified; they can be replaced with any
+compatible build from their projects.
+
+Megabonk itself is not included; you need your own copy. MegabonkSplitscreen is an unofficial fan mod and is not
+affiliated with or endorsed by the game's developer.

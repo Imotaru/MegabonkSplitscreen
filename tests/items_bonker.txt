@@ -1,0 +1,26 @@
+# P1's Bonker never procced in 5 runs (P2's always did): P1 alone with Bonker, a long fight, P1's hits logged;
+# then P2 alone with Bonker, same fight on the same spot.
+chars Monke Monke
+wait 2
+godp1
+godp2
+open
+clear
+clearloot
+nopowerups
+home
+wait 1.5
+item p1 Bonker
+spawn p1 Skeleton 12 5
+wait 20
+dmgsources
+unitem p1 Bonker
+clear
+home
+swap
+wait 1.5
+item p2 Bonker
+spawn p2 Skeleton 12 5
+wait 20
+dmgsources
+quit

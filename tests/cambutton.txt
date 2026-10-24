@@ -1,0 +1,29 @@
+# Camera button in the pause menu reached by d-pad moves (user: no hover sound/darkening, arrows didn't move onto it):
+# down from Resume to the camera button, screenshot (arrows + tint), A toggles it twice (the user's setting is kept),
+# down to Restart, back up to the camera button
+chars Monke Monke
+wait 2
+godp1
+godp2
+pausemenu on
+wait 0.6
+uinav down
+wait 0.3
+uinav down
+wait 0.3
+uinav down
+wait 0.4
+shot cambutton_selected
+uiclick
+wait 0.3
+shot cambutton_toggled
+uiclick
+wait 0.3
+uinav down
+wait 0.4
+shot cambutton_restart_selected
+uinav up
+wait 0.4
+shot cambutton_back
+pausemenu off
+quit

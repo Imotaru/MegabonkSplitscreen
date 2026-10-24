@@ -1,0 +1,30 @@
+# One player down: only the alive player's camera, full screen (P2 down -> P1's view; P1 down -> P2's view)
+chars Monke Monke
+wait 2
+godp1
+godp2
+open
+wait 1
+clear
+clearloot
+shot solo_split
+kill p2
+wait 1.5
+shot solo_p1only
+turn p1 90
+wait 0.6
+shot solo_p1only_turned
+revive p2
+wait 1.5
+shot solo_back_split
+godp2
+kill p1
+wait 1.5
+shot solo_p2only
+turn p2 90
+wait 0.6
+shot solo_p2only_turned
+revive p1
+wait 1.5
+shot solo_back_split2
+quit

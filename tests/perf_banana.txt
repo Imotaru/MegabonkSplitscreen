@@ -1,0 +1,24 @@
+chars Monke Megachad tier 1 map Forest
+# 6-minute perf test follow-up: the mod searched the whole scene for P2's bananas every frame (~1.5 ms with many
+# enemies). P2 gets the Bananarang, ~150 enemies around both players, 60 s of [perf] lines ('control' part).
+wait 2
+godp1
+godp2
+autopick
+open
+clear
+clearloot
+nopowerups
+place 40
+wait 1
+weapon p2 Bananarang
+spawn p1 Skeleton 40 14
+spawn p2 Skeleton 40 14
+wait 15
+spawn p1 Goblin 30 18
+spawn p2 Goblin 30 18
+wait 20
+enemycount
+wait 25
+enemycount
+quit

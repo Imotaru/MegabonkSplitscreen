@@ -1,0 +1,45 @@
+chars Monke Monke
+# User: make sure P1's magnet didn't break (magnet_p2 with XP on: P1's magnet after P2's did nothing - a level-up
+# screen was likely open). XP off here (no level-up screens). P1's magnet first, then P2's, then P1's again.
+# 'gems' = where the gems are and who they fly to; [succ] = P2's magnet pulls.
+wait 2
+godp1
+godp2
+open
+clear
+clearloot
+nopowerups
+place 40
+wait 1
+pickup p1 Xp 8 12
+pickup p2 Xp 8 12
+wait 1
+gems before P1's
+pickup p1 Magnet
+wait 0.3
+gems P1 magnet +0.3s
+wait 0.5
+gems P1 magnet +0.8s
+wait 3
+gems P1 magnet +4s
+pickup p1 Xp 8 12
+pickup p2 Xp 8 12
+wait 1
+gems before P2's
+pickup p2 Magnet
+wait 0.8
+gems P2 magnet +0.8s
+wait 3
+gems P2 magnet +4s
+pickup p1 Xp 8 12
+pickup p2 Xp 8 12
+wait 1
+gems before P1's second
+pickup p1 Magnet
+wait 0.3
+gems P1 magnet 2 +0.3s
+wait 0.5
+gems P1 magnet 2 +0.8s
+wait 3
+gems P1 magnet 2 +4s
+quit

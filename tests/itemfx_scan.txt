@@ -1,0 +1,28 @@
+# Who plays the item effects that showed on P1 instead of P2 (v0.49 sweep): Electric Plug, Mirror, Toxic Barrel,
+# Holy Book, Power Gloves - given to P1 first (so their effect objects exist), scanned; Scarf on P2 (P2's damage bonus).
+chars Monke Monke
+wait 2
+godp1
+godp2
+open
+clear
+clearloot
+nopowerups
+place 18
+wait 1
+item p1 ElectricPlug
+item p1 Mirror
+item p1 ToxicBarrel
+item p1 HolyBook
+item p1 GlovePower
+spawn p1 Skeleton 10 5
+hurt p1 50
+wait 6
+fxscan ElectricalPlugEffect LightningNova Smoke Mirror PoisonFx PoisonExplosionGreen HolyBookFx PowerGlovesFx Snowflakes ImpactCircle DustCircleBig
+isnap s0
+item p2 Scarf
+wait 0.5
+isnap s1
+idelta s0 s1
+iteminfo p2 Scarf
+quit

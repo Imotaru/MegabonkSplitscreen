@@ -1,0 +1,33 @@
+# User: P2's Megachad had two shields after the Shield tome (fixed itself later). Every Outline on both players
+# before the tome, at once, while charging, full, after a hit; screenshots. Megachad x2, apart, no enemies.
+chars Megachad Megachad
+wait 2
+godp1
+godp2
+open
+clear
+clearloot
+nopowerups
+home
+wait 1.5
+outlines
+tome p1 Shield 3
+tome p2 Shield 3
+wait 0.3
+outlines
+shot outl_at_once
+wait 3
+outlines
+shot outl_charging
+wait 7
+outlines
+shot outl_full
+hurt p1 30
+hurt p2 30
+wait 1.2
+hurt p1 30
+hurt p2 30
+wait 0.3
+outlines
+shot outl_hit
+quit

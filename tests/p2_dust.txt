@@ -1,0 +1,26 @@
+# User: P1 gets a dust effect when jumping and landing, P2 doesn't. Both walk and jump side by side, screenshots
+# at the jump and the landing; the movement event listeners are in the log ([dust]).
+chars Monke Monke
+wait 2
+godp1
+godp2
+open
+clear
+clearloot
+nopowerups
+place 6
+wait 1
+go p1 1 0
+go p2 1 0
+wait 1
+shot dust_walk
+jump p1
+jump p2
+wait 0.05
+shot dust_jump
+wait 0.6
+shot dust_land
+wait 0.4
+stop p1
+stop p2
+quit

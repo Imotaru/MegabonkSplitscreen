@@ -1,0 +1,9 @@
+menuscript
+# 'SplitBonk V1.0 Alpha' at the top left of the main menu (user, V1.0 Alpha release); hidden off the main page.
+waitselected B_Play 20
+wait 1
+shot menu_label
+p1press
+wait 2.5
+shot menu_label_charselect
+quit

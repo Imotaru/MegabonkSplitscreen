@@ -1,0 +1,21 @@
+# v0.49.3 small fixes: P2's model only shows once through its portal ([portal] log during the start); the gravestone
+# marker hides while paused (P1 down, P2 far away so the arrow is on screen: pause on / off screenshots).
+chars Monke Monke
+wait 2
+godp2
+open
+clear
+clearloot
+nopowerups
+place 30
+wait 1
+kill p1
+wait 2
+shot marker_unpaused
+pausemenu on
+wait 0.5
+shot marker_paused
+pausemenu off
+wait 0.5
+shot marker_after
+quit

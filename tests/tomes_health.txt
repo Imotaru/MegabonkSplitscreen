@@ -1,0 +1,28 @@
+# P2's Shield, Regeneration and Blood (lifesteal) tomes: stats, shield bar, regen over time, lifesteal while fighting
+chars Monke Monke
+godp1
+wait 2
+stat p2 Shield
+stat p2 HealthRegen
+stat p2 Lifesteal
+snap base
+tome p2 Shield 3
+tome p2 Regeneration 3
+tome p2 Blood 3
+wait 3
+stat p2 Shield
+stat p2 HealthRegen
+stat p2 Lifesteal
+snap after tomes
+shot tomes
+hurt p2 70
+snap hurt
+wait 8
+snap after 8s
+spawn p2 Skeleton 6 5
+wait 10
+snap after fighting
+shot fight
+wait 6
+snap end
+quit

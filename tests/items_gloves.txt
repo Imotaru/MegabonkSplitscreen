@@ -1,0 +1,216 @@
+﻿# Gloves with the longer fight (cooldown before the first proc)
+chars Monke Monke
+wait 2
+godp1
+godp2
+open
+clear
+clearloot
+nopowerups
+wait 1
+log GloveLightning (fight)
+home
+wait 0
+clear
+wait 1.5
+isnap GloveLightning.A0
+item p1 GloveLightning
+wait 1
+isnap GloveLightning.A1
+spawn p1 Skeleton 8 5
+wait 5
+wait 0
+wait 5
+isnap GloveLightning.A2
+unitem p1 GloveLightning
+clear
+wait 1
+home
+swap
+clear
+wait 1.5
+isnap GloveLightning.B0
+item p2 GloveLightning
+wait 1
+isnap GloveLightning.B1
+spawn p2 Skeleton 8 5
+wait 5
+shot fx_GloveLightning
+wait 5
+isnap GloveLightning.B2
+unitem p2 GloveLightning
+clear
+wait 1
+icheck GloveLightning
+log GlovePoison (fight)
+home
+wait 0
+clear
+wait 1.5
+isnap GlovePoison.A0
+item p1 GlovePoison
+wait 1
+isnap GlovePoison.A1
+spawn p1 Skeleton 8 5
+wait 5
+wait 0
+wait 5
+isnap GlovePoison.A2
+unitem p1 GlovePoison
+clear
+wait 1
+home
+swap
+clear
+wait 1.5
+isnap GlovePoison.B0
+item p2 GlovePoison
+wait 1
+isnap GlovePoison.B1
+spawn p2 Skeleton 8 5
+wait 5
+shot fx_GlovePoison
+wait 5
+isnap GlovePoison.B2
+unitem p2 GlovePoison
+clear
+wait 1
+icheck GlovePoison
+log GloveBlood (fight)
+home
+wait 0
+clear
+wait 1.5
+isnap GloveBlood.A0
+item p1 GloveBlood
+wait 1
+isnap GloveBlood.A1
+spawn p1 Skeleton 8 5
+wait 5
+wait 0
+wait 5
+isnap GloveBlood.A2
+unitem p1 GloveBlood
+clear
+wait 1
+home
+swap
+clear
+wait 1.5
+isnap GloveBlood.B0
+item p2 GloveBlood
+wait 1
+isnap GloveBlood.B1
+spawn p2 Skeleton 8 5
+wait 5
+shot fx_GloveBlood
+wait 5
+isnap GloveBlood.B2
+unitem p2 GloveBlood
+clear
+wait 1
+icheck GloveBlood
+log GloveCurse (fight)
+home
+wait 0
+clear
+wait 1.5
+isnap GloveCurse.A0
+item p1 GloveCurse
+wait 1
+isnap GloveCurse.A1
+spawn p1 Skeleton 8 5
+wait 5
+wait 0
+wait 5
+isnap GloveCurse.A2
+unitem p1 GloveCurse
+clear
+wait 1
+home
+swap
+clear
+wait 1.5
+isnap GloveCurse.B0
+item p2 GloveCurse
+wait 1
+isnap GloveCurse.B1
+spawn p2 Skeleton 8 5
+wait 5
+shot fx_GloveCurse
+wait 5
+isnap GloveCurse.B2
+unitem p2 GloveCurse
+clear
+wait 1
+icheck GloveCurse
+log GlovePower (fight)
+home
+wait 0
+clear
+wait 1.5
+isnap GlovePower.A0
+item p1 GlovePower
+wait 1
+isnap GlovePower.A1
+spawn p1 Skeleton 8 5
+wait 5
+wait 0
+wait 5
+isnap GlovePower.A2
+unitem p1 GlovePower
+clear
+wait 1
+home
+swap
+clear
+wait 1.5
+isnap GlovePower.B0
+item p2 GlovePower
+wait 1
+isnap GlovePower.B1
+spawn p2 Skeleton 8 5
+wait 5
+shot fx_GlovePower
+wait 5
+isnap GlovePower.B2
+unitem p2 GlovePower
+clear
+wait 1
+icheck GlovePower
+log GlovePoison (fight)
+home
+wait 0
+clear
+wait 1.5
+isnap GlovePoison.A0
+item p1 GlovePoison
+wait 1
+isnap GlovePoison.A1
+spawn p1 Skeleton 8 5
+wait 5
+wait 0
+wait 5
+isnap GlovePoison.A2
+unitem p1 GlovePoison
+clear
+wait 1
+home
+swap
+clear
+wait 1.5
+isnap GlovePoison.B0
+item p2 GlovePoison
+wait 1
+isnap GlovePoison.B1
+spawn p2 Skeleton 8 5
+wait 5
+shot fx_GlovePoison
+wait 5
+isnap GlovePoison.B2
+unitem p2 GlovePoison
+clear
+wait 1
+icheck GlovePoison
+iteminfo p2 GlovePoison
+quit

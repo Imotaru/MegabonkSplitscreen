@@ -1,0 +1,27 @@
+# Cl4nk for both players: same passive and stats, then a fight (hits, evades, kills) - P2 should match P1
+chars Cl4nk Cl4nk
+wait 2
+godp1
+godp2
+open
+wait 1
+passives start
+statdiff start
+clear
+kills reset
+dmg reset
+spawn p1 Goblin 4 6
+spawn p2 Goblin 4 6
+wait 3
+shot Cl4nk_fight
+wait 3
+jump p1
+jump p2
+wait 0.3
+shot Cl4nk_jump
+wait 2
+kills
+dmg Cl4nk
+passives after
+statdiff after
+quit

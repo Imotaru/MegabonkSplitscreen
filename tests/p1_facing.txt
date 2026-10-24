@@ -1,0 +1,44 @@
+chars Megachad Megachad tier 1 map Forest
+# User: P1 Megachad goes straight but faces to the right, and spun fast with nobody touching the pad. P1 runs north
+# while P2 runs and slides east; then P1 stands still while P2 slides east, then west; 'facing' = P1's model yaw vs
+# its movement (P2's slide runs the game's animator update on P1's borrowed renderer).
+wait 2
+godp1
+godp2
+open
+clear
+clearloot
+nopowerups
+place 6
+wait 1
+go p1 0 1
+go p2 1 0
+wait 0.8
+facing
+p2press slide 1.2
+wait 0.3
+facing
+wait 0.3
+facing
+wait 0.5
+facing
+shot facing_p2slide
+go p1 0 0
+wait 1
+facing
+go p2 1 0
+wait 0.5
+p2press slide 1
+wait 0.4
+facing
+go p2 -1 0
+wait 0.4
+p2press slide 1
+wait 0.4
+facing
+wait 0.4
+facing
+go p2 0 0
+wait 1
+facing
+quit

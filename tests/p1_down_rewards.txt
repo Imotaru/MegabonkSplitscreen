@@ -1,0 +1,69 @@
+﻿# User (v0.49.1): with P1 down, P2 couldn't level up or get shrine rewards, P2's clock did nothing, billboards didn't
+# face P2's camera, P1's weapons kept going, and P1 came back with a pile of chest rewards. P1 is downed; P2 levels up,
+# gets a stat reward, picks up a clock and opens a chest - each at once and P2's; P1's weapons off; then P1 revived.
+# Last: a tornado moved between the players (what it does to P1 and P2).
+chars Monke Monke
+wait 2
+godp2
+open
+clear
+clearloot
+nopowerups
+place 8
+wait 1
+kill p1
+wait 2
+downstate
+rewardqueue
+shot p1down_solo_view
+p2levelup 1
+wait 1.5
+rewardqueue
+shot p1down_p2_levelup
+uiclick
+wait 1
+isnap r0
+shrine p2
+wait 12
+rewardqueue
+shot p1down_p2_shrine
+uiclick
+wait 1
+isnap r1
+idelta r0 r1
+nopowerups off
+ring p2 Time 2 1
+wait 1.5
+downstate
+shot p1down_p2_clock
+nopowerups
+keepwindows
+givegold p2 300
+chest p2
+wait 0.5
+p2interact
+wait 1.5
+chestwin
+uiclick
+wait 5
+chestwin
+uiclick
+wait 1.5
+chestwin
+items
+keepwindows off
+revive p1
+wait 3
+downstate
+rewardqueue
+items
+tornado 2
+wait 1
+tornado near
+wait 0.5
+tornadoes
+wait 1
+tornadoes
+wait 1
+tornadoes
+quit

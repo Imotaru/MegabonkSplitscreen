@@ -1,0 +1,63 @@
+chars Monke Fox tier 3 map Forest
+# User: what happens if one player takes the portal while the other is dead - ideally the dead player is revived in
+# the next stage. Stage 1: P2 down, P1 summons + takes the portal. Stage 2: P1 down, P2 takes the portal to stage 3.
+# downstate / stagestate after each change, screenshots on arrival.
+wait 2
+godp1
+open
+clear
+clearloot
+nopowerups
+home
+wait 1
+# ---- stage 1: P2 down, P1 goes through
+kill p2
+wait 2
+downstate
+stagestate
+toportal p1
+wait 1
+p1interact
+wait 3
+killbosses
+wait 3
+toportal p1 far
+wait 1
+toportal p1
+wait 1
+p1interact
+wait 14
+godp2
+downstate
+stagestate
+shot s2_arrive
+wait 6
+downstate
+stagestate
+shot s2_later
+clear
+# ---- stage 2: P1 down, P2 goes through (P2's test health back on arrival - the revived P2 has its real HP)
+kill p1
+wait 2
+downstate
+toportal p2
+wait 1
+p2interact
+wait 3
+killbosses
+wait 3
+toportal p2 far
+wait 1
+toportal p2
+wait 1
+p2interact
+wait 14
+godp1
+downstate
+stagestate
+shot s3_arrive
+wait 6
+downstate
+stagestate
+shot s3_later
+quit

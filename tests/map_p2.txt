@@ -1,0 +1,24 @@
+chars Monke Fox tier 1 map Forest
+# User: P2's full map (right trigger) was blank. Players apart (split), P2 holds the map: screenshot + mapcheck; then P1.
+wait 2
+godp1
+godp2
+open
+clear
+clearloot
+nopowerups
+place 70
+wait 3
+map p2 on
+wait 1.5
+mapcheck
+shot map_p2
+map p2 off
+wait 1
+map p1 on
+wait 1.5
+mapcheck
+shot map_p1
+map p1 off
+wait 1
+quit

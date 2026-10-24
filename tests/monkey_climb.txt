@@ -1,0 +1,25 @@
+# Monkey wall climb: P1 and P2 both Monkeys. Each runs at the nearest wall, holds into it, then stops.
+chars Monke Monke
+wait 2
+snap before
+shot start
+# P1 first
+go p1 wall
+wait 4
+snap p1 at wall
+shot p1_wall
+wait 2
+snap p1 climbing?
+stop p1
+wait 2
+# then P2
+go p2 wall
+wait 4
+snap p2 at wall
+shot p2_wall
+wait 2
+snap p2 climbing?
+stop p2
+wait 2
+snap end
+quit

@@ -1,0 +1,37 @@
+chars Monke Monke tier 1 map Desert
+# Mud (MinibossPig PigMudSplash: the game slows P1 for 3 s inside the hit) with P2 1 m from P1 - P2 must get Slow too.
+# The attack is triggered by name (bossattack) - the pig picks its attacks at random.
+wait 2
+godp1
+godp2
+open
+clear
+clearloot
+nopowerups
+wait 1
+place 1
+spawn p1 MinibossPig 1 9
+wait 2
+place 1
+bossattack PigMudSplash
+wait 2.5
+statuses
+wait 2
+place 1
+bossattack PigMudSplash
+wait 2.5
+statuses
+wait 2
+place 1
+bossattack PigMudSplash
+wait 2.5
+statuses
+wait 2
+place 1
+bossattack PigMudSplash
+wait 2.5
+statuses
+wait 2
+shot mud
+clear
+quit

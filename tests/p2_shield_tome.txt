@@ -1,0 +1,20 @@
+# P2's shield tome (v0.49.1 test: P2 Shield L3 but shield 0/0): P2's Shield stat and P2's health after the tome
+chars Megachad Megachad
+wait 2
+godp2
+open
+clear
+clearloot
+home
+wait 1
+stat p2 Shield
+tome p2 Shield 3
+wait 1
+stat p2 Shield
+health
+shield
+wait 6
+health
+shield
+shot p2_shield_tome
+quit

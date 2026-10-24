@@ -1,0 +1,222 @@
+﻿chars Monke Monke
+godp1
+godp2
+wait 2
+open
+wait 3
+wait 1
+unweapon p1 Bananarang
+unweapon p2 Bananarang
+wait 1
+# weapon sweep part 2
+clear
+weapon p1 Frostwalker
+weapon p2 Frostwalker
+wait 1
+wcompare Frostwalker
+dmg reset
+spawn p1 Skeleton 6 5
+spawn p2 Skeleton 6 5
+wait 5
+shot w_Frostwalker
+wait 1
+dmg Frostwalker
+unweapon p1 Frostwalker
+unweapon p2 Frostwalker
+clear
+weapon p1 SpaceNoodle
+weapon p2 SpaceNoodle
+wait 1
+wcompare SpaceNoodle
+dmg reset
+spawn p1 Skeleton 6 5
+spawn p2 Skeleton 6 5
+wait 5
+shot w_SpaceNoodle
+wait 1
+dmg SpaceNoodle
+unweapon p1 SpaceNoodle
+unweapon p2 SpaceNoodle
+clear
+weapon p1 DragonsBreath
+weapon p2 DragonsBreath
+wait 1
+wcompare DragonsBreath
+dmg reset
+spawn p1 Skeleton 6 5
+spawn p2 Skeleton 6 5
+wait 5
+shot w_DragonsBreath
+wait 1
+dmg DragonsBreath
+unweapon p1 DragonsBreath
+unweapon p2 DragonsBreath
+clear
+weapon p1 Chunkers
+weapon p2 Chunkers
+wait 1
+wcompare Chunkers
+dmg reset
+spawn p1 Skeleton 6 5
+spawn p2 Skeleton 6 5
+wait 5
+shot w_Chunkers
+wait 1
+dmg Chunkers
+unweapon p1 Chunkers
+unweapon p2 Chunkers
+clear
+weapon p1 Mine
+weapon p2 Mine
+wait 1
+wcompare Mine
+dmg reset
+spawn p1 Skeleton 6 5
+spawn p2 Skeleton 6 5
+wait 5
+shot w_Mine
+wait 1
+dmg Mine
+unweapon p1 Mine
+unweapon p2 Mine
+clear
+weapon p1 PoisonFlask
+weapon p2 PoisonFlask
+wait 1
+wcompare PoisonFlask
+dmg reset
+spawn p1 Skeleton 6 5
+spawn p2 Skeleton 6 5
+wait 5
+shot w_PoisonFlask
+wait 1
+dmg PoisonFlask
+unweapon p1 PoisonFlask
+unweapon p2 PoisonFlask
+clear
+weapon p1 BlackHole
+weapon p2 BlackHole
+wait 1
+wcompare BlackHole
+dmg reset
+spawn p1 Skeleton 6 5
+spawn p2 Skeleton 6 5
+wait 5
+shot w_BlackHole
+wait 1
+dmg BlackHole
+unweapon p1 BlackHole
+unweapon p2 BlackHole
+clear
+weapon p1 Katana
+weapon p2 Katana
+wait 1
+wcompare Katana
+dmg reset
+spawn p1 Skeleton 6 5
+spawn p2 Skeleton 6 5
+wait 5
+shot w_Katana
+wait 1
+dmg Katana
+unweapon p1 Katana
+unweapon p2 Katana
+clear
+weapon p1 BloodMagic
+weapon p2 BloodMagic
+wait 1
+wcompare BloodMagic
+dmg reset
+spawn p1 Skeleton 6 5
+spawn p2 Skeleton 6 5
+wait 5
+shot w_BloodMagic
+wait 1
+dmg BloodMagic
+unweapon p1 BloodMagic
+unweapon p2 BloodMagic
+clear
+weapon p1 BluetoothDagger
+weapon p2 BluetoothDagger
+wait 1
+wcompare BluetoothDagger
+dmg reset
+spawn p1 Skeleton 6 5
+spawn p2 Skeleton 6 5
+wait 5
+shot w_BluetoothDagger
+wait 1
+dmg BluetoothDagger
+unweapon p1 BluetoothDagger
+unweapon p2 BluetoothDagger
+clear
+weapon p1 Dice
+weapon p2 Dice
+wait 1
+wcompare Dice
+dmg reset
+spawn p1 Skeleton 6 5
+spawn p2 Skeleton 6 5
+wait 5
+shot w_Dice
+wait 1
+dmg Dice
+unweapon p1 Dice
+unweapon p2 Dice
+clear
+weapon p1 HeroSword
+weapon p2 HeroSword
+wait 1
+wcompare HeroSword
+dmg reset
+spawn p1 Skeleton 6 5
+spawn p2 Skeleton 6 5
+wait 5
+shot w_HeroSword
+wait 1
+dmg HeroSword
+unweapon p1 HeroSword
+unweapon p2 HeroSword
+clear
+weapon p1 CorruptSword
+weapon p2 CorruptSword
+wait 1
+wcompare CorruptSword
+dmg reset
+spawn p1 Skeleton 6 5
+spawn p2 Skeleton 6 5
+wait 5
+shot w_CorruptSword
+wait 1
+dmg CorruptSword
+unweapon p1 CorruptSword
+unweapon p2 CorruptSword
+clear
+weapon p1 Shotgun
+weapon p2 Shotgun
+wait 1
+wcompare Shotgun
+dmg reset
+spawn p1 Skeleton 6 5
+spawn p2 Skeleton 6 5
+wait 5
+shot w_Shotgun
+wait 1
+dmg Shotgun
+unweapon p1 Shotgun
+unweapon p2 Shotgun
+clear
+weapon p1 Scythe
+weapon p2 Scythe
+wait 1
+wcompare Scythe
+dmg reset
+spawn p1 Skeleton 6 5
+spawn p2 Skeleton 6 5
+wait 5
+shot w_Scythe
+wait 1
+dmg Scythe
+unweapon p1 Scythe
+unweapon p2 Scythe
+quit

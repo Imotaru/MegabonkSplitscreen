@@ -1,0 +1,53 @@
+chars Monke Monke
+# User: P2's Chunkers and Aegis don't turn any more, and jitter when P2 turns (Chunkers more). [spinprobe] = each
+# always-on attack's yaw per frame (end of LateUpdate) and the Chunkers rocks around the body, P1's and P2's.
+# 1) P2 alone has them (P1 none: P2's spin rate can't be measured on P1), standing, then turning in a circle
+# 2) P1 gets them too (measured), P2 standing, then turning
+wait 2
+godp1
+godp2
+open
+clear
+clearloot
+nopowerups
+place 40
+wait 1
+weapon p2 Chunkers
+weapon p2 Aegis
+wait 3
+spinprobe 0.5
+wait 1
+shot p2_spin_still
+go p2 1 0
+wait 0.4
+go p2 0 1
+wait 0.4
+spinprobe 1.2
+go p2 -1 0
+wait 0.4
+go p2 0 -1
+wait 0.4
+go p2 1 0
+wait 0.5
+stop p2
+wait 1
+weapon p1 Chunkers
+weapon p1 Aegis
+wait 4
+spinprobe 0.5
+wait 1
+shot both_spin_still
+go p2 1 0
+wait 0.4
+go p2 0 1
+wait 0.4
+spinprobe 1.2
+go p2 -1 0
+wait 0.4
+go p2 0 -1
+wait 0.4
+go p2 1 0
+wait 0.5
+stop p2
+wait 1
+quit

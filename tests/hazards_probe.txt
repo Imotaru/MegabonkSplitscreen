@@ -1,0 +1,37 @@
+# Hazards for P2 (user: other environmental hazards / things that push the player): which ones this map has; jump pad,
+# water and rail tried with P1 first, then P2 (same object) - speed, grounded, movement state right after.
+chars Monke Monke
+wait 2
+godp1
+godp2
+open
+clear
+clearloot
+nopowerups
+hazards
+hazard pad p1
+wait 0.3
+hazardstate
+wait 0.5
+hazardstate
+hazard pad p2
+wait 0.3
+hazardstate
+wait 0.5
+hazardstate
+shot hazard_pad
+hazard water p1
+wait 0.8
+hazardstate
+hazard water p2
+wait 0.8
+hazardstate
+shot hazard_water
+hazard rail p1
+wait 0.8
+hazardstate
+hazard rail p2
+wait 0.8
+hazardstate
+shot hazard_rail
+quit

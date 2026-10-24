@@ -1,0 +1,37 @@
+# Shield tome fill (P1 vs P2, no recent hits), shields broken by real enemy hits, refill + P2's outline after
+chars Monke Monke
+wait 2
+open
+wait 1
+unweapon p1 Bananarang
+unweapon p2 Bananarang
+clear
+tome p1 Shield 1
+tome p2 Shield 1
+shield
+wait 0.3
+shield
+wait 0.3
+shield
+wait 0.5
+shield
+wait 1
+shield
+shot shield_full
+spawn p1 Goblin 3 2
+spawn p2 Goblin 3 2
+wait 2
+shield
+shot shield_broken
+clear
+wait 0.5
+shield
+shot shield_after
+wait 4
+shield
+wait 2
+shield
+wait 1.5
+shield
+shot shield_refilled
+quit

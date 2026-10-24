@@ -1,0 +1,49 @@
+chars Monke Monke tier 1 map Forest
+# User: the level 1 regen tome didn't work (for P2). Both hurt; HP watched without the tome (base regen 10), then both
+# get Regeneration L1 (HealthRegen 10 -> 50) and HP watched again. Same character, enemies cleared every second.
+wait 2
+open
+clear
+clearloot
+nopowerups
+home
+tickrate
+wait 1
+hurt p1 80
+hurt p2 80
+wait 0.5
+health
+clear
+wait 1
+clear
+wait 1
+clear
+wait 1
+clear
+wait 1
+clear
+wait 1
+clear
+wait 1
+health
+tome p1 Regeneration
+tome p2 Regeneration
+wait 0.2
+stat p1 HealthRegen
+stat p2 HealthRegen
+health
+clear
+wait 1
+clear
+wait 1
+clear
+wait 1
+clear
+wait 1
+clear
+wait 1
+clear
+wait 1
+health
+tickrate
+quit

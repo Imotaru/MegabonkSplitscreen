@@ -1,0 +1,35 @@
+chars Megachad Megachad tier 1 map Forest
+# User: P2 (Megachad, Steam Deck) didn't slide - "try it going downhill". Both at the top of a slope, run down it,
+# then slide for 2.5 s; speeds every 0.5 s.
+wait 2
+godp1
+godp2
+open
+clear
+clearloot
+nopowerups
+toslope
+wait 1
+shot slope_top
+go p1 0 1
+go p2 0 1
+wait 0.6
+slidestate
+p1slide 2.5
+p2press slide 2.5
+wait 0.5
+slidestate
+wait 0.5
+slidestate
+shot slope_mid
+wait 0.5
+slidestate
+wait 0.5
+slidestate
+wait 0.5
+slidestate
+wait 0.5
+slidestate
+go p1 0 0
+go p2 0 0
+quit

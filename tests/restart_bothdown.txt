@@ -1,0 +1,19 @@
+# Freeze repro (user, v0.48.3): P2 down, then P1 dies -> death screen -> restart = the game froze.
+# The hang catcher in tools\autotest.ps1 writes a dump if the game stops ticking.
+chars Monke Monke
+wait 2
+godp1
+godp2
+open
+wait 1
+clear
+kill p2
+wait 3
+kill p1
+wait 10
+shot death_screen
+restart
+wait 15
+shot after_restart
+health
+quit

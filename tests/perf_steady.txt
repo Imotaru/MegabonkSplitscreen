@@ -1,0 +1,62 @@
+chars Monke Fox tier 1 map Forest
+# User: the Steam Deck was dropping frames - is it the logging? The mod's own time per frame ([perf] mod per frame / parts, every
+# 300 frames in tests) in a steady fight: both players close, moving, skeleton waves around both, ~70 s.
+wait 2
+godp1
+godp2
+open
+clearloot
+nopowerups
+place 5
+wait 1
+spawn p1 Skeleton 6 8
+spawn p2 Skeleton 6 8
+go p1 1 0
+go p2 1 0
+wait 5
+go p1 -1 0
+go p2 -1 0
+wait 5
+spawn p1 Skeleton 6 8
+spawn p2 Skeleton 6 8
+go p1 1 0
+go p2 1 0
+wait 5
+go p1 -1 0
+go p2 -1 0
+wait 5
+spawn p1 Skeleton 6 8
+spawn p2 Skeleton 6 8
+go p1 1 0
+go p2 1 0
+wait 5
+go p1 -1 0
+go p2 -1 0
+wait 5
+spawn p1 Skeleton 6 8
+spawn p2 Skeleton 6 8
+go p1 1 0
+go p2 1 0
+wait 5
+go p1 -1 0
+go p2 -1 0
+wait 5
+spawn p1 Skeleton 6 8
+spawn p2 Skeleton 6 8
+go p1 1 0
+go p2 1 0
+wait 5
+go p1 -1 0
+go p2 -1 0
+wait 5
+spawn p1 Skeleton 6 8
+spawn p2 Skeleton 6 8
+go p1 1 0
+go p2 1 0
+wait 5
+go p1 -1 0
+go p2 -1 0
+wait 5
+go p1 0 0
+go p2 0 0
+quit

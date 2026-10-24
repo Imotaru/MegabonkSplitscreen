@@ -1,0 +1,37 @@
+﻿chars Megachad Megachad tier 1 map Forest
+# User: look into P2's slide pose once more (standing still both only crouch). The game's PlayerRenderer.Update runs
+# on P2's animator too. Both run forward (6 m apart, like slide.txt), then slide while running; animwatch + screenshots
+# mid-slide; then idle. P1 = the one in the middle of the left half (P1's camera), P2 = in the middle of the right.
+wait 2
+godp1
+godp2
+open
+clear
+clearloot
+nopowerups
+gamerenderer off
+place 6
+wait 1
+go p1 0 1
+go p2 0 1
+wait 1.2
+slidestate
+shot off_pose_run
+animwatch 0.6
+p1slide 1.2
+p2press slide 1.2
+wait 0.25
+slidestate
+shot off_pose_slide1
+wait 0.3
+shot off_pose_slide2
+wait 0.3
+slidestate
+shot off_pose_slide3
+wait 1
+go p1 0 0
+go p2 0 0
+wait 1.5
+slidestate
+shot off_pose_idle
+quit

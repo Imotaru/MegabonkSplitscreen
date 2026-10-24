@@ -1,0 +1,35 @@
+﻿# Item effects that follow "the player" (user: some treasure reward vfx don't get applied to P2; screenshot: P2's Ghost
+# item's ghosts flew around P1): P2 holds Ghost, interacts with a chest - which objects appear, what class, which
+# fields point at P1. Then P2 gets Bob's Dead (ghosts while walking) and walks.
+chars Monke Monke
+wait 2
+godp1
+godp2
+open
+clear
+clearloot
+nopowerups
+place 18
+givegold p2 500
+item p2 Ghost
+wait 1
+chest p2
+wait 0.5
+objsnap
+p2interact
+wait 1
+objdiff
+shot fx_ghost
+keepwindows off
+wait 1
+clear
+objsnap
+item p2 BobDead
+go p2 1 0
+wait 3
+stop p2
+objdiff
+shot fx_bobdead
+chestprice
+shot chestprice_hud
+quit

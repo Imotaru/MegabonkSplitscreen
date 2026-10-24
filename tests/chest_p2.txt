@@ -1,0 +1,64 @@
+﻿# P2 opens a chest (user: "test that p2 is able to select chest rewards when they are the ones that interact with it"):
+# the window is P2's, the controls go to P2, Open + Take (the pad's A on the selected button) - the item lands in P2's
+# items and not P1's; then P1 opens one (item to P1).
+# Chest events go to the opener: P2 holds Credit Card Red + Ghost, P1 Credit Card Green - P2's chest moves P2's card
+# stats only, P1's chest P1's only. Last: every item given to both, the item event listeners logged (none should be
+# left on the shared events: they're routed by owner).
+chars Monke Monke
+wait 2
+godp1
+godp2
+open
+clear
+clearloot
+keepwindows
+givegold p2 500
+givegold p1 500
+item p2 CreditCardRed
+item p2 Ghost
+item p1 CreditCardGreen
+wait 1
+chestprice
+isnap c0
+chest p2
+wait 0.5
+p2interact
+wait 1.5
+chestwin
+shot chest_p2_open
+uiclick
+wait 5
+chestwin
+shot chest_p2_item
+uiclick
+wait 1.5
+chestwin
+shot chest_p2_taken
+isnap c1
+idelta c0 c1
+chestprice
+items
+wait 1
+chest p1
+wait 0.5
+p1interact
+wait 1.5
+chestwin
+uiclick
+wait 5
+chestwin
+uiclick
+wait 1.5
+chestwin
+isnap c2
+idelta c1 c2
+chestprice
+items
+keepwindows off
+wait 1
+allitems p1
+allitems p2
+wait 1.5
+itemscan
+shot all_items_rows
+quit

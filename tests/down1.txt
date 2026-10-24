@@ -1,0 +1,37 @@
+# Death piece 1: the run ends only when both are down. P1 dies (P2 alive) -> P1 down, no death screen; P1 revived;
+# P2 dies (P1 alive) -> P2 down; P2 revived; then P1 down + P2 down -> the game's death screen
+chars Monke Monke
+wait 2
+godp2
+open
+wait 1
+clear
+downstate
+kill p1
+wait 2
+downstate
+shot down_p1
+spawn p1 Goblin 4 4
+wait 2
+downstate
+revive p1
+wait 1
+downstate
+shot down_p1_revived
+godp1
+kill p2
+wait 1
+downstate
+shot down_p2
+revive p2
+wait 1
+downstate
+kill p1
+wait 2
+downstate
+kill p2
+wait 3
+downstate
+shot down_both
+wait 3
+quit

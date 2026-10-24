@@ -1,0 +1,26 @@
+chars Monke Fox tier 1 map Forest
+# User: split at about 4x the distance (15 -> 60 m, merge 12 -> 48). P2 placed 5 / 25 / 45 / 70 m beside P1 (side by
+# side = the hardest case for the shared view): merged with both on screen up to 45, split at 70. [cam] log.
+wait 2
+godp1
+godp2
+open
+clear
+clearloot
+nopowerups
+place 5
+wait 3
+shot cam_5
+place 25
+wait 3
+shot cam_25
+place 45
+wait 3
+shot cam_45
+place 70
+wait 3
+shot cam_70
+place 30
+wait 3
+shot cam_back_30
+quit

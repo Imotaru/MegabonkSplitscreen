@@ -1,0 +1,75 @@
+﻿chars Monke Megachad tier 1 map Forest
+# User: a 6-minute game to see how performance holds up near the end of a match. Natural spawns, XP on, both
+# players alive (test health), rewards auto-picked (autopick), the two players running different routes (split
+# screen). [perf] lines (mod time per frame + the game frame) all the way; enemy count every 30 s, a screenshot a minute.
+wait 2
+godp1
+godp2
+xp on
+autopick
+open
+wait 1
+enemycount
+go p1 0 1
+go p2 0 -1
+wait 15
+go p1 1 0
+go p2 -1 0
+wait 15
+enemycount
+go p1 0 -1
+go p2 0 1
+wait 15
+go p1 -1 0
+go p2 1 0
+wait 15
+enemycount
+shot perf6_1min
+go p1 0 1
+go p2 0 -1
+wait 15
+go p1 1 0
+go p2 -1 0
+wait 15
+enemycount
+go p1 0 -1
+go p2 0 1
+wait 15
+go p1 -1 0
+go p2 1 0
+wait 15
+enemycount
+shot perf6_2min
+go p1 0 1
+go p2 0 -1
+wait 15
+go p1 1 0
+go p2 -1 0
+wait 15
+enemycount
+go p1 0 -1
+go p2 0 1
+wait 15
+go p1 -1 0
+go p2 1 0
+wait 15
+enemycount
+shot perf6_3min
+go p1 0 1
+go p2 0 -1
+wait 15
+go p1 1 0
+go p2 -1 0
+wait 15
+enemycount
+go p1 0 -1
+go p2 0 1
+wait 15
+go p1 -1 0
+go p2 1 0
+wait 15
+enemycount
+shot perf6_4min
+go p1 0 0
+go p2 0 0
+quit

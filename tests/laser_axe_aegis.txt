@@ -1,0 +1,42 @@
+﻿# Space Noodle (laser), Axe, Aegis: the weapons the last sweep still flagged
+chars Monke Monke
+godp1
+godp2
+wait 2
+open
+wait 1
+unweapon p1 Bananarang
+unweapon p2 Bananarang
+clear
+weapon p1 SpaceNoodle
+weapon p2 SpaceNoodle
+wait 1
+spawn p1 Skeleton 6 6
+spawn p2 Skeleton 6 6
+wait 5
+shot l_SpaceNoodle
+wait 1
+dmg SpaceNoodle
+unweapon p1 SpaceNoodle
+unweapon p2 SpaceNoodle
+clear
+weapon p1 Axe
+weapon p2 Axe
+wait 1
+spawn p1 Skeleton 6 5
+spawn p2 Skeleton 6 5
+wait 5
+shot l_Axe
+wait 1
+dmg Axe
+unweapon p1 Axe
+unweapon p2 Axe
+clear
+weapon p1 Aegis
+weapon p2 Aegis
+wait 1
+spawn p1 Skeleton 6 3
+spawn p2 Skeleton 6 3
+wait 6
+dmg Aegis
+quit

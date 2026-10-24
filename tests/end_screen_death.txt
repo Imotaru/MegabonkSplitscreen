@@ -1,0 +1,36 @@
+chars Monke Fox tier 1 map Forest
+# User: give P2 its own summary on the end screen (character, kills, level, inventory, damage). A death run (user OK'd
+# tier 1 death runs): both fight skeletons for a while (P2 with its own weapon + item, a level), both die, the stats
+# window (showstats), screentext + screenshots; [endscreen] log + endscreen_dump.txt (the screen's layout).
+wait 2
+godp1
+godp2
+open
+clear
+clearloot
+nopowerups
+item p1 Ghost
+item p2 CreditCardRed
+item p2 Oats
+weapon p2 Shotgun
+home
+wait 1
+spawn p1 Skeleton 6 5
+spawn p2 Skeleton 8 5
+wait 8
+spawn p1 Skeleton 6 5
+spawn p2 Skeleton 8 5
+wait 8
+kills
+kill p2
+wait 1
+kill p1
+wait 8
+shot dead
+showstats
+wait 4
+shot end_stats
+screentext
+wait 4
+shot end_stats2
+quit

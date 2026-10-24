@@ -1,0 +1,25 @@
+menuscript
+# User: in character select the 4 corner arrows round a character icon / the Confirm button don't appear for P2, and
+# they're a little too large for P1. P2 picks (cursor -> P2's Confirm), then moves back up into the grid.
+waitselected B_Play 20
+p1press
+wait 2
+p2join
+wait 1.5
+lobbyconfirm
+wait 2
+p1pick Monke
+wait 1
+arrowstate
+shot arrows_start
+p2press dpad right
+wait 0.6
+shot arrows_p2_hover
+p2press a
+wait 1
+menustate
+shot arrows_p2_confirm
+p2press dpad up
+wait 0.6
+shot arrows_p2_back
+quit

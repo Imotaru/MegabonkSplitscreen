@@ -1,0 +1,28 @@
+﻿chars Monke Megachad tier 1 map Forest
+# User: on the Deck P2 as Megachad could not slide (Monke could). Same as slide.txt with Megachad for both.
+wait 2
+godp1
+godp2
+open
+clear
+clearloot
+nopowerups
+place 6
+wait 1
+go p1 0 1
+go p2 0 1
+wait 1.5
+slidestate
+p1slide 1.2
+p2press slide 1.2
+wait 0.3
+slidestate
+wait 0.2
+wait 0.4
+wait 0.5
+slidestate
+wait 1
+slidestate
+go p1 0 0
+go p2 0 0
+quit

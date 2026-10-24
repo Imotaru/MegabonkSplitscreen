@@ -1,0 +1,22 @@
+# Camera modes (pause menu toggle, saved): players close together - dynamic merges, split stays split; the button
+# in the pause menu; the mode is set back at the end (the test leaves the user's setting as it found it)
+chars Monke Monke
+wait 2
+godp1
+godp2
+place
+wait 2
+shot cam_dynamic_close
+pausemenu on
+wait 0.5
+shot cam_pausemenu
+cammode
+wait 0.3
+shot cam_pausemenu_split
+pausemenu off
+wait 1.5
+shot cam_split_close
+cammode
+wait 1.5
+shot cam_dynamic_again
+quit

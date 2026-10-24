@@ -1,0 +1,33 @@
+# P2's damage numbers (3D texts) must face P2's camera like P1's face P1's, while P2's camera turns. Enemies stay
+# packed around both players so numbers are on screen at every check.
+chars Monke Monke
+wait 2
+godp1
+godp2
+open
+wait 1
+clear
+spawn p1 Goblin 10 3
+spawn p2 Goblin 10 3
+wait 1.2
+billboards hits 0
+shot bbt_0
+turn p2 90
+wait 0.4
+billboards hits 90
+shot bbt_90
+spawn p2 Goblin 8 3
+turn p2 90
+wait 0.4
+billboards hits 180
+shot bbt_180
+turn p2 90
+wait 0.4
+billboards hits 270
+shot bbt_270
+spawn p2 Goblin 8 3
+turn p2 45
+wait 0.4
+billboards hits 315
+shot bbt_315
+quit

@@ -1,0 +1,58 @@
+﻿# User (v0.49): P2's Megachad showed two shields after the Shield tome (fixed itself later); P2's lifesteal had no "+1";
+# P2's shield hits showed red "-hp" instead of the blue shield number; P2's free chest was navigated by P1.
+# Megachad x2, players apart and still. Shield tome to both - screenshots at once and later; hits on both (shield then
+# health); lifesteal tome for both with a few enemies; then a free chest dropped at P2.
+chars Megachad Megachad
+wait 2
+godp1
+godp2
+open
+clear
+clearloot
+nopowerups
+home
+wait 1.5
+shot shield_before
+tome p1 Shield 3
+tome p2 Shield 3
+wait 0.3
+shot shield_at_once
+wait 1.5
+shot shield_after_2s
+wait 8
+shot shield_after_10s
+hurt p1 20
+hurt p2 20
+wait 0.15
+wait 1.2
+hurt p1 20
+hurt p2 20
+wait 0.15
+shot shield_hit
+wait 1
+hurt p1 400
+hurt p2 400
+wait 0.15
+shot health_hit
+wait 3
+shot shield_regen
+tome p1 Blood 5
+tome p2 Blood 5
+spawn p1 Skeleton 6 5
+spawn p2 Skeleton 6 5
+wait 2
+shot lifesteal
+wait 3
+clear
+keepwindows
+freechest p2
+wait 2.5
+chestwin
+shot free_chest_p2
+uiclick
+wait 5
+chestwin
+uiclick
+wait 1.5
+chestwin
+quit

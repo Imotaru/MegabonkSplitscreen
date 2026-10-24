@@ -1,0 +1,76 @@
+chars Monke Fox tier 3 map Forest
+# Bark Vader's debuffs (user: the 30000 was a poison debuff). Route: stage 1 (P1), 2 (P2), 3's final altar (P1)
+# - TestFinalBoss() only set a flag. Bleed orbs (FinalFightController.SpawnOrbsBleed) with both players together, then P2 alone at the boss
+# and P1 away (BossPoison - his touch?), then P1 alone at the boss. [debuff] says whose list each debuff went on.
+wait 2
+godp1
+godp2
+open
+clear
+clearloot
+nopowerups
+item p1 Ghost
+item p2 CreditCardRed
+wait 1
+stagestate
+toportal p1
+wait 1
+p1interact
+wait 3
+killbosses
+wait 3
+toportal p1 far
+wait 1
+toportal p1
+wait 1
+p1interact
+wait 14
+stagestate
+wait 8
+clear
+toportal p2
+wait 1
+p2interact
+wait 3
+killbosses
+wait 3
+toportal p2 far
+wait 1
+toportal p2
+wait 1
+p2interact
+wait 14
+stagestate
+wait 8
+clear
+stagestate
+toportal p1
+wait 1
+p1interact
+wait 16
+stagestate
+shot vader_arrive
+wait 6
+statuses
+# ---- P2 standing on Bark Vader (his touch: BossPoison for P1 last run), P1 40 m off
+toboss p1 40
+toboss p2 1 top
+wait 0.5
+touching p2
+wait 2.5
+statuses
+wait 3
+touching p2
+statuses
+shot vader_p2_on
+# ---- P1 on him, P2 off
+toboss p2 40
+toboss p1 1 top
+wait 0.5
+touching p1
+wait 2.5
+statuses
+wait 3
+statuses
+shot vader_p1_on
+quit

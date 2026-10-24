@@ -1,0 +1,24 @@
+# Leak check: P1 Noelle, P2 Noelle - stat tables + health, no enemies
+chars Noelle Noelle
+wait 2
+open
+wait 1
+clear
+clearloot
+statdump t0
+health
+clear
+wait 3
+clear
+wait 3
+clear
+wait 3
+clear
+wait 3
+clear
+wait 3
+clear
+wait 3
+health
+statdump t20
+quit

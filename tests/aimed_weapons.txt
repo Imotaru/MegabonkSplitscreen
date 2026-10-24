@@ -1,0 +1,44 @@
+﻿# Shotgun, Sniper, Dragon's Breath only (the weapons P2 did no damage with)
+chars Monke Monke
+godp1
+godp2
+wait 2
+open
+wait 1
+unweapon p1 Bananarang
+unweapon p2 Bananarang
+clear
+weapon p1 Shotgun
+weapon p2 Shotgun
+wait 1
+spawn p1 Skeleton 6 5
+spawn p2 Skeleton 6 5
+wait 5
+shot a_Shotgun
+wait 1
+dmg Shotgun
+unweapon p1 Shotgun
+unweapon p2 Shotgun
+clear
+weapon p1 Sniper
+weapon p2 Sniper
+wait 1
+spawn p1 Skeleton 6 8
+spawn p2 Skeleton 6 8
+wait 5
+shot a_Sniper
+wait 1
+dmg Sniper
+unweapon p1 Sniper
+unweapon p2 Sniper
+clear
+weapon p1 DragonsBreath
+weapon p2 DragonsBreath
+wait 1
+spawn p1 Skeleton 6 5
+spawn p2 Skeleton 6 5
+wait 5
+shot a_DragonsBreath
+wait 1
+dmg DragonsBreath
+quit

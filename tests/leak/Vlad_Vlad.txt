@@ -1,0 +1,24 @@
+# Leak check: P1 Vlad, P2 Vlad - stat tables + health, no enemies
+chars Vlad Vlad
+wait 2
+open
+wait 1
+clear
+clearloot
+statdump t0
+health
+clear
+wait 3
+clear
+wait 3
+clear
+wait 3
+clear
+wait 3
+clear
+wait 3
+clear
+wait 3
+health
+statdump t20
+quit

@@ -1,0 +1,25 @@
+# Does taking an on-hit item away (the test's 'unitem') leave the game's on-hit list wrong for the next one?
+# P1: Blood Gloves given, taken away, Poison Gloves given - the proc lists after each step. Same for P2.
+chars Monke Monke
+wait 2
+godp1
+godp2
+open
+clear
+clearloot
+nopowerups
+home
+wait 1
+item p1 GloveBlood
+procs p1
+unitem p1 GloveBlood
+procs p1
+item p1 GlovePoison
+procs p1
+item p2 GloveBlood
+procs p2
+unitem p2 GloveBlood
+procs p2
+item p2 GlovePoison
+procs p2
+quit

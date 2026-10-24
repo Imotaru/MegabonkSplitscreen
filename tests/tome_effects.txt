@@ -1,0 +1,109 @@
+﻿# Tome effects: both players hold Revolver + Aura, get each weapon tome x3; weapon numbers, damage and a screenshot compared
+chars Monke Monke
+godp1
+godp2
+wait 2
+open
+wait 1
+unweapon p1 Bananarang
+unweapon p2 Bananarang
+weapon p1 Revolver
+weapon p2 Revolver
+weapon p1 Aura
+weapon p2 Aura
+wait 1
+clear
+spawn p1 Skeleton 6 6
+spawn p2 Skeleton 6 6
+wait 5
+shot t_base
+dmg base
+clear
+tome p1 Damage 3
+tome p2 Damage 3
+wait 1.5
+wcompare Revolver
+wcompare Aura
+spawn p1 Skeleton 6 6
+spawn p2 Skeleton 6 6
+wait 5
+shot t_Damage
+dmg Damage
+clear
+tome p1 Size 3
+tome p2 Size 3
+wait 1.5
+wcompare Revolver
+wcompare Aura
+spawn p1 Skeleton 6 6
+spawn p2 Skeleton 6 6
+wait 5
+shot t_Size
+dmg Size
+clear
+tome p1 Quantity 3
+tome p2 Quantity 3
+wait 1.5
+wcompare Revolver
+wcompare Aura
+spawn p1 Skeleton 6 6
+spawn p2 Skeleton 6 6
+wait 5
+shot t_Quantity
+dmg Quantity
+clear
+tome p1 ProjectileSpeed 3
+tome p2 ProjectileSpeed 3
+wait 1.5
+wcompare Revolver
+wcompare Aura
+spawn p1 Skeleton 6 6
+spawn p2 Skeleton 6 6
+wait 5
+shot t_ProjectileSpeed
+dmg ProjectileSpeed
+clear
+tome p1 Duration 3
+tome p2 Duration 3
+wait 1.5
+wcompare Revolver
+wcompare Aura
+spawn p1 Skeleton 6 6
+spawn p2 Skeleton 6 6
+wait 5
+shot t_Duration
+dmg Duration
+clear
+tome p1 Cooldown 3
+tome p2 Cooldown 3
+wait 1.5
+wcompare Revolver
+wcompare Aura
+spawn p1 Skeleton 6 6
+spawn p2 Skeleton 6 6
+wait 5
+shot t_Cooldown
+dmg Cooldown
+clear
+tome p1 Precision 3
+tome p2 Precision 3
+wait 1.5
+wcompare Revolver
+wcompare Aura
+spawn p1 Skeleton 6 6
+spawn p2 Skeleton 6 6
+wait 5
+shot t_Precision
+dmg Precision
+clear
+tome p1 Knockback 3
+tome p2 Knockback 3
+wait 1.5
+wcompare Revolver
+wcompare Aura
+spawn p1 Skeleton 6 6
+spawn p2 Skeleton 6 6
+wait 5
+shot t_Knockback
+dmg Knockback
+quit

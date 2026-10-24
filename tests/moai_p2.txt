@@ -1,0 +1,35 @@
+﻿chars Monke Monke tier 1 map Forest
+# User: did we do Moai rewards for P2? A Moai shrine in front of P2 (P1 40 m off): P2 uses it -> P2's reward screen
+# on P2's half, the pick goes to P2; then the same for P1. Gold given first in case it costs gold.
+wait 2
+godp1
+godp2
+open
+clear
+clearloot
+nopowerups
+place 40
+wait 1
+moai p2
+wait 1
+shot moai_p2_before
+p2interact
+wait 1.5
+shot moai_p2_screen
+items
+pickoffer 0
+wait 1.5
+shot moai_p2_after
+items
+stat p1 Evasion
+stat p2 Evasion
+clear
+moai p1
+wait 1
+p1interact
+wait 1.5
+shot moai_p1_screen
+pickoffer 0
+wait 1.5
+items
+quit

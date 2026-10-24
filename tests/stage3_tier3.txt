@@ -1,0 +1,82 @@
+chars Monke Fox tier 3 map Forest
+# User: test stage 3 ("you will have to run it on tier 3, but I'm not sure"). Forest has StageForest1..3. Each stage:
+# stagestate (index, last / tier final / final boss stage, which altars and portals the stage has), the altar, the
+# boss dies, through the portal. Stage 1 and 3 by P1, stage 2 by P2. Then whatever comes after stage 3.
+wait 2
+godp1
+godp2
+open
+clear
+clearloot
+nopowerups
+item p1 Ghost
+item p2 CreditCardRed
+wait 1
+stagestate
+# ---- stage 1 (P1)
+toportal p1
+wait 1
+p1interact
+wait 3
+killbosses
+wait 3
+toportal p1 far
+wait 1
+toportal p1
+wait 1
+p1interact
+wait 14
+stagestate
+shot s2_arrive
+wait 8
+clear
+# ---- stage 2 (P2)
+toportal p2
+wait 1
+p2interact
+wait 3
+killbosses
+wait 3
+toportal p2 far
+wait 1
+toportal p2
+wait 1
+p2interact
+wait 14
+stagestate
+shot s3_arrive
+wait 8
+clear
+stagestate
+# ---- stage 3 (P1): then the final boss stage - P1's track and the boss attacks' [bossatk] log (user: Bark Vader's
+# tree spikes didn't hurt or push P2; this run P1 also left the arena)
+toportal p1
+wait 1
+shot s3_altar
+trackp1 60
+p1interact
+wait 4
+stagestate
+shot s3_after_altar
+killbosses
+wait 4
+stagestate
+toportal p1 far
+wait 1
+toportal p1
+wait 1
+p1interact
+wait 14
+stagestate
+shot s4
+wait 10
+stagestate
+shot s4_later
+# P1 runs away from P2: the spikes follow P1 - P2 must stop being hit, P1 must only be hit where the spikes are
+go p1 1 0
+wait 3
+go p1 0 0
+wait 8
+stagestate
+shot s4_end
+quit

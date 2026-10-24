@@ -1,0 +1,26 @@
+# Megachad x2: the FLEX popup when Flex blocks a hit, with P2's camera turned - screenshots in quick succession
+chars Megachad Megachad
+wait 2
+godp1
+godp2
+open
+wait 1
+unweapon p1 Sword
+unweapon p2 Sword
+clear
+turn p2 120
+wait 3
+spawn p1 Goblin 6 1.5
+spawn p2 Goblin 6 1.5
+wait 0.3
+shot flexpop_1
+wait 0.2
+shot flexpop_2
+wait 0.2
+shot flexpop_3
+wait 0.2
+shot flexpop_4
+wait 0.2
+shot flexpop_5
+billboards flex popup
+quit

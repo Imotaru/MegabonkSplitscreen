@@ -1,0 +1,19 @@
+# Performance: a busy 15 s fight for both players (damage numbers, pickups, billboards) - the [perf] log lines
+chars Monke Monke
+wait 2
+godp1
+godp2
+open
+wait 1
+snap after open
+shot perf_open
+spawn p1 Goblin 12 4
+spawn p2 Goblin 12 4
+wait 5
+spawn p1 Goblin 12 4
+spawn p2 Goblin 12 4
+wait 5
+spawn p1 Goblin 12 4
+spawn p2 Goblin 12 4
+wait 5
+quit

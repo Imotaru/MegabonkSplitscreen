@@ -1,0 +1,142 @@
+﻿# Every tome: one level to both players, then every stat's change compared (P1 vs P2)
+chars Monke Monke
+godp1
+godp2
+wait 3
+shot merged_labels
+mark
+tome p1 Damage
+tome p2 Damage
+wait 1.5
+delta Damage
+mark
+tome p1 Agility
+tome p2 Agility
+wait 1.5
+delta Agility
+mark
+tome p1 Cooldown
+tome p2 Cooldown
+wait 1.5
+delta Cooldown
+mark
+tome p1 Quantity
+tome p2 Quantity
+wait 1.5
+delta Quantity
+mark
+tome p1 Knockback
+tome p2 Knockback
+wait 1.5
+delta Knockback
+mark
+tome p1 Armor
+tome p2 Armor
+wait 1.5
+delta Armor
+mark
+tome p1 Health
+tome p2 Health
+wait 1.5
+delta Health
+mark
+tome p1 Regeneration
+tome p2 Regeneration
+wait 1.5
+delta Regeneration
+mark
+tome p1 Size
+tome p2 Size
+wait 1.5
+delta Size
+mark
+tome p1 ProjectileSpeed
+tome p2 ProjectileSpeed
+wait 1.5
+delta ProjectileSpeed
+mark
+tome p1 Duration
+tome p2 Duration
+wait 1.5
+delta Duration
+mark
+tome p1 Evasion
+tome p2 Evasion
+wait 1.5
+delta Evasion
+mark
+tome p1 Attraction
+tome p2 Attraction
+wait 1.5
+delta Attraction
+mark
+tome p1 Luck
+tome p2 Luck
+wait 1.5
+delta Luck
+mark
+tome p1 Xp
+tome p2 Xp
+wait 1.5
+delta Xp
+mark
+tome p1 Golden
+tome p2 Golden
+wait 1.5
+delta Golden
+mark
+tome p1 Precision
+tome p2 Precision
+wait 1.5
+delta Precision
+mark
+tome p1 Shield
+tome p2 Shield
+wait 1.5
+delta Shield
+mark
+tome p1 Blood
+tome p2 Blood
+wait 1.5
+delta Blood
+mark
+tome p1 Thorns
+tome p2 Thorns
+wait 1.5
+delta Thorns
+mark
+tome p1 Bounce
+tome p2 Bounce
+wait 1.5
+delta Bounce
+mark
+tome p1 Cursed
+tome p2 Cursed
+wait 1.5
+delta Cursed
+mark
+tome p1 Silver
+tome p2 Silver
+wait 1.5
+delta Silver
+mark
+tome p1 Balance
+tome p2 Balance
+wait 1.5
+delta Balance
+mark
+tome p1 Chaos
+tome p2 Chaos
+wait 1.5
+delta Chaos
+mark
+tome p1 Gambler
+tome p2 Gambler
+wait 1.5
+delta Gambler
+mark
+tome p1 Hoarder
+tome p2 Hoarder
+wait 1.5
+delta Hoarder
+quit

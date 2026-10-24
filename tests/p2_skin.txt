@@ -1,0 +1,45 @@
+menuscript
+# User: P2 can't select character skins - P2 should select them the same way as P1, through character select.
+# P2 picks Sir Oofie, moves left into the skin row (P2's info panel is left of P2's grid) (menustate shows the skin cursor), entering lands on the nearest (last) skin, one more left = the 5th, A picks it,
+# confirms with Start and starts the run: the log should show the skin on P2's avatar and on P2's body.
+allskins
+menustate
+waitselected B_Play 20
+p1press
+wait 2
+p2join
+wait 1.5
+lobbyconfirm
+wait 1.5
+p1pick Monke
+p2press dpad right
+wait 0.4
+p2press a
+wait 0.5
+shot skin_picked
+p2press dpad left
+wait 0.3
+menustate
+p2press dpad left
+wait 0.3
+menustate
+shot skin_row
+p2press dpad left
+wait 0.3
+menustate
+p2press a
+wait 0.5
+menustate
+shot skin_chosen
+p2press start
+wait 2.5
+menustate
+p1press
+wait 1.5
+p1press
+wait 1.5
+p1press
+wait 8
+menustate
+shot skin_run
+quit

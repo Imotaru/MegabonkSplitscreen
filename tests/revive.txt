@@ -1,0 +1,51 @@
+# Death state, all pieces: P2 goes down -> gravestone + map skull + arrow on P1's screen; P1 goes there, leaves once
+# (the ring drains), stands 10 s (shrine ring) -> red portal facing up, P2 jumps out (falling animation), REVIVED at
+# full HP. Then the same for P1 (blue portal). The helper keeps walking back to the gravestone (goblins push).
+chars Monke Monke
+wait 2
+godp1
+godp2
+open
+wait 1
+clear
+clearloot
+kill p2
+wait 1
+shot rv_arrow_p1view
+tograve p1
+wait 1.5
+downstate
+shot rv_zone_enter
+go p1 1 0
+wait 1.2
+stop p1
+wait 0.5
+go p1 grave
+wait 5
+shot rv_charging
+waitrevive p2
+wait 0.1
+shot rv_revived
+wait 0.3
+shot rv_revived2
+wait 0.5
+shot rv_revived3
+stop p1
+wait 2
+downstate
+godp2
+kill p1
+wait 1.5
+shot rv_arrow_p2view
+tograve p2
+wait 0.3
+go p2 grave
+waitrevive p1
+wait 0.1
+shot rv_p1_revived
+wait 0.3
+shot rv_p1_revived2
+stop p2
+wait 2
+downstate
+quit

@@ -1,0 +1,26 @@
+﻿chars Monke Monke tier 1 map Forest
+# User: when P2 dies, the minimap uses P1's. Players 40 m apart: P2 goes down (one view, on P1) - screenshot; P2
+# revived; then P1 goes down (one view, on P2) - screenshot. Which minimap shows, centred on whom.
+wait 2
+godp1
+open
+clear
+clearloot
+nopowerups
+place 40
+wait 2
+shot minimap_both
+wait 4
+godp2
+kill p2
+wait 3
+shot minimap_p2_down
+revive p2
+wait 4
+godp2
+kill p1
+wait 3
+shot minimap_p1_down
+revive p1
+wait 3
+quit

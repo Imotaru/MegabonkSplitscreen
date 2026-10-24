@@ -1,0 +1,36 @@
+# P2's billboards (pickups, LookAtCamera sprites, damage numbers) must face P2's camera, also while P2's camera turns
+chars Monke Monke
+wait 2
+godp1
+godp2
+open
+wait 1
+clear
+ring p2 Health 9 8
+ring p2 Time 13 8
+ring p1 Health 9 8
+spawn p2 Goblin 4 6
+wait 1.5
+billboards start
+shot bb_0
+turn p2 90
+wait 0.7
+billboards turned 90
+shot bb_90
+turn p2 90
+wait 0.7
+billboards turned 180
+shot bb_180
+turn p2 90
+wait 0.7
+billboards turned 270
+shot bb_270
+turn p2 45
+wait 0.7
+billboards turned 315
+shot bb_315
+turn p1 120
+wait 0.7
+billboards P1 turned 120
+shot bb_p1turn
+quit

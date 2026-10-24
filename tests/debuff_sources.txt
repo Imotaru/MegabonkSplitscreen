@@ -1,0 +1,60 @@
+chars Monke Monke tier 1 map Desert
+# User: test each debuff's real source and fix the bleed leak. Sources from the game's data (debuffsources):
+# poison on touch = Scorpion / ScorpionMedium / MinibossScorpion; MinibossScorpion's PoisonSpikes; MinibossPig's
+# MudSplash. [debuff] = which list each debuff went on, [dmg] = every damage call while a debuff is on.
+wait 2
+godp1
+godp2
+open
+clear
+clearloot
+nopowerups
+home
+wait 1
+# ---- bleed repro (crossed over: 10 HP to the other player)
+debuff p1 Bleed 3
+wait 4
+statuses
+debuff p2 Bleed 3
+wait 4
+statuses
+# ---- a Scorpion touches P2 (players 40 m apart): P2 poisoned, not P1
+spawn p2 Scorpion 1 1.5
+wait 3
+statuses
+clear
+wait 5
+statuses
+# ---- a Scorpion touches P1
+spawn p1 Scorpion 1 1.5
+wait 3
+statuses
+clear
+wait 5
+statuses
+# ---- the scorpion miniboss next to both players (P2 3 m from P1): its poison spikes
+place 3
+wait 1
+spawn p1 MinibossScorpion 1 9
+wait 6
+statuses
+shot scorpion_boss
+wait 6
+statuses
+wait 6
+statuses
+clear
+wait 5
+# ---- the pig miniboss's mud
+place 3
+wait 1
+spawn p1 MinibossPig 1 9
+wait 6
+statuses
+shot pig
+wait 6
+statuses
+wait 6
+statuses
+clear
+quit

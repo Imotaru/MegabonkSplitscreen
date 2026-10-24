@@ -1,0 +1,24 @@
+# Death pieces 2+3: the gravestone stands, facing the other player; a green skull on the minimap and the full map
+chars Monke Monke
+wait 2
+godp1
+godp2
+open
+wait 1
+clear
+kill p2
+wait 1.5
+shot grave_stand
+map p1 on
+wait 1
+shot skull_map
+map p1 off
+wait 0.5
+place
+wait 1
+go p1 1 0
+wait 1
+stop p1
+wait 0.5
+shot grave_near
+quit

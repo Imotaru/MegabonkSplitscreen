@@ -1,0 +1,30 @@
+# Megachad x2: Flex blocks a hit ("blocked" popup) and the Flex-ready effect - P2's must show at P2 and face P2's
+# camera like P1's, while P2's camera turns
+chars Megachad Megachad
+wait 2
+godp1
+godp2
+open
+wait 1
+unweapon p1 Sword
+unweapon p2 Sword
+clear
+wait 1
+shot flex_ready
+spawn p1 Goblin 6 2
+spawn p2 Goblin 6 2
+wait 0.6
+billboards blocked 0
+shot flex_hit
+turn p2 120
+wait 0.5
+billboards blocked 120
+shot flex_hit_120
+wait 4
+billboards later
+shot flex_later
+turn p2 120
+wait 3
+billboards blocked 240
+shot flex_240
+quit

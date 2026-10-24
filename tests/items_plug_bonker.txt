@@ -1,0 +1,31 @@
+# Electric Plug's effect (not on P2 in the sweep) - where it lives under P1 when it plays; P1's Bonker never procs
+# (P1 0 / P2 200+ in 4 runs) - the game's proc lists for both players. Players apart, P1 still.
+chars Monke Monke
+wait 2
+godp1
+godp2
+open
+clear
+clearloot
+nopowerups
+home
+wait 1.5
+item p1 ElectricPlug
+item p1 Bonker
+item p2 Bonker
+wait 0.5
+procs p1
+procs p2
+spawn p1 Skeleton 8 5
+spawn p2 Skeleton 8 5
+hurt p1 300
+wait 0.1
+fxscan ElectricalPlugEffect LightningNova Smoke
+wait 1
+hurt p1 300
+wait 0.1
+fxscan ElectricalPlugEffect LightningNova Smoke
+wait 10
+dmgsources
+procs p1
+quit

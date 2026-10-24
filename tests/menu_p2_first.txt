@@ -1,0 +1,37 @@
+﻿menuscript
+# Same as menu_p1_first, but P2 confirms first (A on its picked character): map select should become P2's and
+# P2 starts the run.
+menustate
+waitselected B_Play 20
+p1press
+wait 2
+menustate
+p2join
+wait 1.5
+menustate
+shot menu2_lobby
+lobbyconfirm
+wait 1.5
+menustate
+p1pick Monke
+p2press dpad right
+wait 0.4
+p2press a
+wait 0.5
+menustate
+shot menu2_picks
+p2press a
+wait 2.5
+menustate
+shot menu2_after_confirm
+p1press
+wait 1.5
+menustate
+p1press
+wait 1.5
+menustate
+p1press
+wait 6
+menustate
+shot menu2_end
+quit

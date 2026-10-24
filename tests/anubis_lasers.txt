@@ -1,0 +1,58 @@
+﻿chars Monke Monke tier 1 map Desert
+# User: Anubis' red laser (targets a player) never went for P2, and neither it nor the blue spinning lasers hurt P2.
+# Anubis = Pharaoh1/2/3 (all have LaserTargetAttack = EnemySpecialAttackTargetLaser and LaserDiscoAttack =
+# EnemySpecialAttackSpinningLasers). Spawned 8 m from P2 (P1 40 m off), then 8 m from P1 (the other way round).
+# [laser] = what each laser touches, where the red one aims, and the hits run as P2's.
+wait 2
+godp1
+godp2
+open
+clear
+clearloot
+nopowerups
+place 40
+wait 1
+# ---- Anubis next to P2
+spawn p2 Pharaoh1 1 8
+wait 2
+health
+bossattack EnemySpecialAttackTargetLaser
+wait 5
+shot laser_red_p2
+wait 2
+health
+bossattack EnemySpecialAttackSpinningLasers
+wait 3
+shot laser_blue_p2
+wait 3
+health
+clear
+wait 2
+# ---- Anubis next to P1
+spawn p1 Pharaoh2 1 8
+wait 2
+health
+bossattack EnemySpecialAttackTargetLaser
+wait 5
+shot laser_red_p1
+wait 2
+health
+bossattack EnemySpecialAttackSpinningLasers
+wait 3
+shot laser_blue_p1
+wait 3
+health
+clear
+# ---- P1 down (user: the red laser went for P1's grave, not the living P2): Anubis next to the grave
+kill p1
+wait 2
+downstate
+spawn p1 Pharaoh3 1 8
+wait 2
+health
+bossattack EnemySpecialAttackTargetLaser
+wait 6
+shot laser_red_p1down
+health
+clear
+quit

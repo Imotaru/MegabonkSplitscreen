@@ -1,0 +1,82 @@
+chars Monke Fox tier 3 map Forest
+item p2 Oats
+weapon p2 Shotgun
+# User: one last test - they beat the boss at the end; what does the final screen show. Route to the final stage
+# (stage 1 P1, 2 P2, 3's final altar P1), Bark Vader dies (killfinalboss), the final portal, screenshots and every
+# text on the end screen (screentext).
+wait 2
+godp1
+godp2
+open
+clear
+clearloot
+nopowerups
+item p1 Ghost
+item p2 CreditCardRed
+wait 1
+stagestate
+toportal p1
+wait 1
+p1interact
+wait 3
+killbosses
+wait 3
+toportal p1 far
+wait 1
+toportal p1
+wait 1
+p1interact
+wait 14
+stagestate
+wait 8
+clear
+toportal p2
+wait 1
+p2interact
+wait 3
+killbosses
+wait 3
+toportal p2 far
+wait 1
+toportal p2
+wait 1
+p2interact
+wait 14
+stagestate
+wait 8
+clear
+stagestate
+toportal p1
+wait 1
+p1interact
+wait 16
+stagestate
+shot final_arrive
+wait 4
+killfinalboss
+wait 6
+stagestate
+shot boss_dead
+wait 6
+stagestate
+toportal p1 far
+wait 1
+toportal p1
+wait 1
+shot final_portal
+p1interact
+wait 6
+shot end_1
+screentext
+wait 6
+shot end_2
+screentext
+wait 8
+shot end_3
+screentext
+# Confirm (P1's pad: the selected button's click)
+p1press
+wait 6
+menustate
+shot after_confirm
+quit

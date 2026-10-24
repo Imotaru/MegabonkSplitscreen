@@ -1,0 +1,8 @@
+# Death piece 2: which gravestone / skull / revive-ish assets the game has loaded (names only)
+chars Monke Monke
+wait 3
+findassets grave tomb rip cross coffin cemetery
+findassets skull death dead ghost soul
+findassets shrine charge
+findassets portal
+quit

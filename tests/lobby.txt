@@ -1,0 +1,7 @@
+# The player lobby (after the main menu's Play): both in, P2 leaves (B), P2 joins again, Confirm -> character select
+# (P2 on P1's character), then the run starts as usual
+chars Monke Monke
+lobbytest
+wait 1
+shot lobby_run
+quit

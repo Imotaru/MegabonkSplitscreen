@@ -1,0 +1,37 @@
+chars Monke Fox tier 1 map Forest
+# User: the player can slide - P2 couldn't. Both run forward, then slide (P1: the game's PlayerInput.sliding; P2: its
+# Slide button - 'slide' in tests) while running: speed / crouching / height before, during, after. No enemies.
+wait 2
+godp1
+godp2
+open
+clear
+clearloot
+nopowerups
+place 6
+wait 1
+go p1 0 1
+go p2 0 1
+wait 1.5
+slidestate
+animprobe
+shot slide_run
+p1slide 1.2
+p2press slide 1.2
+wait 0.3
+slidestate
+animprobe
+shot slide_mid
+wait 0.2
+animprobe
+shot slide_mid2
+wait 0.4
+animprobe
+shot slide_mid3
+wait 0.5
+slidestate
+wait 1
+slidestate
+go p1 0 0
+go p2 0 0
+quit

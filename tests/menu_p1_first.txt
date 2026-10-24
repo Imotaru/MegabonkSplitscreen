@@ -1,0 +1,38 @@
+﻿menuscript
+# User: inconsistencies in character select depending on who confirms first; sometimes a player can't get to map
+# select and start a run. Here P1 confirms first. Everything by presses (P1: UI submit / moves like the pad, P2: its
+# pad buttons) - no shortcut to map select. menustate after each step: where we are, who has the game's pads.
+menustate
+waitselected B_Play 20
+p1press
+wait 2
+menustate
+p2join
+wait 1.5
+menustate
+shot menu1_lobby
+lobbyconfirm
+wait 1.5
+menustate
+p1pick Monke
+p2press dpad right
+wait 0.4
+p2press a
+wait 0.5
+menustate
+shot menu1_picks
+p1confirm
+wait 2.5
+menustate
+shot menu1_after_confirm
+p1press
+wait 1.5
+menustate
+p1press
+wait 1.5
+menustate
+p1press
+wait 6
+menustate
+shot menu1_end
+quit

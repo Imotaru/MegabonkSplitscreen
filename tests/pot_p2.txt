@@ -1,0 +1,46 @@
+﻿chars Monke Megachad tier 1 map Forest
+# User: XP from pots P2 breaks goes to P1. P2 breaks five pots (drops are random: XP, gold or a heart); after each,
+# the pickups near P2 (whose they are / who they fly to) and both players' XP.
+wait 2
+godp1
+godp2
+xp on
+autopick
+open
+clear
+clearloot
+place 8
+wait 1
+pot p2
+wait 0.5
+p2interact
+wait 0.4
+pickupsnear p2
+wait 1.5
+pickupsnear p2
+pot p2
+wait 0.5
+p2interact
+wait 0.4
+pickupsnear p2
+wait 1.5
+pot p2
+wait 0.5
+p2interact
+wait 0.4
+pickupsnear p2
+wait 1.5
+pot p2
+wait 0.5
+p2interact
+wait 0.4
+pickupsnear p2
+wait 1.5
+pot p2
+wait 0.5
+p2interact
+wait 0.4
+pickupsnear p2
+wait 1.5
+pickupsnear p2
+quit

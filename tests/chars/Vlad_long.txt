@@ -1,0 +1,23 @@
+# Vlad for both: Blood Magic's kill reward (+max HP) must reach the killer - many kills each
+chars Vlad Vlad
+wait 2
+godp1
+godp2
+open
+wait 1
+statdiff start
+clear
+spawn p1 Goblin 8 5
+spawn p2 Goblin 8 5
+wait 8
+spawn p1 Goblin 8 5
+spawn p2 Goblin 8 5
+wait 8
+spawn p1 Goblin 8 5
+spawn p2 Goblin 8 5
+wait 8
+kills
+statdiff after
+stat p1 MaxHealth
+stat p2 MaxHealth
+quit

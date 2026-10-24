@@ -1,0 +1,38 @@
+﻿chars Monke Monke
+# User: P2 picked up a magnet and the XP flew to P1, even XP closer to P2. XP gems 12 m around each player (outside
+# the pickup radius), players 40 m apart; P2 takes a magnet, then (fresh gems) P1 takes one. 'gems' = where the gems
+# are and who they fly to; [succ] = the game's pull-all-XP for P2.
+wait 2
+godp1
+godp2
+open
+clear
+clearloot
+nopowerups
+xp on
+place 40
+wait 1
+pickup p1 Xp 8 12
+pickup p2 Xp 8 12
+wait 1
+gems before
+pickup p2 Magnet
+wait 0.3
+gems P2 magnet +0.3s
+wait 0.5
+gems P2 magnet +0.8s
+shot magnet_p2
+wait 3
+gems P2 magnet +4s
+pickup p1 Xp 8 12
+pickup p2 Xp 8 12
+wait 1
+gems before P1's
+pickup p1 Magnet
+wait 0.3
+gems P1 magnet +0.3s
+wait 0.5
+gems P1 magnet +0.8s
+wait 3
+gems P1 magnet +4s
+quit

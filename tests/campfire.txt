@@ -1,0 +1,57 @@
+chars Monke Monke tier 1 map Forest
+# User: the Campfire item (stand still -> a campfire appears and heals you) - does it work for P2? Normal health (not
+# test health), both hurt to 60 below max, enemies cleared every few seconds. P2 takes the Campfire and stands still:
+# health every 2 s + where the fire is (screenshot). Then P1 the same (P2's removed), to compare the heal rates.
+wait 2
+open
+clear
+clearloot
+nopowerups
+place 40
+wait 1
+hurt p1 60
+hurt p2 60
+wait 0.5
+health
+stat p2 HealthRegen
+item p2 Campfire
+wait 2
+health
+stat p2 HealthRegen
+wait 2
+clear
+health
+wait 2
+health
+stat p2 HealthRegen
+shot campfire_p2
+wait 2
+clear
+health
+wait 2
+health
+wait 2
+health
+stat p2 HealthRegen
+unitem p2 Campfire
+wait 1
+item p1 Campfire
+wait 2
+health
+stat p1 HealthRegen
+wait 2
+clear
+health
+wait 2
+health
+stat p1 HealthRegen
+shot campfire_p1
+wait 2
+clear
+health
+wait 2
+health
+wait 2
+health
+stat p1 HealthRegen
+quit

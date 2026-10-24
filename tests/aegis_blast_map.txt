@@ -1,0 +1,44 @@
+# Side by side (split view): both players get Aegis and a Shield tome and are attacked; then an exploding spider
+# at P2 only (P1 far away); then both players' map panels. Screenshots compare the effects.
+chars Monke Monke
+godp1
+wait 2
+weapon p1 Aegis
+weapon p2 Aegis
+tome p1 Shield 2
+tome p2 Shield 2
+# P2 walks away from P1 so the view splits and the blast only reaches P2
+go p2 1 0
+wait 3
+stop p2
+wait 2
+snap ready
+shot ready
+spawn p1 Skeleton 4 4
+spawn p2 Skeleton 4 4
+wait 2
+shot hits1
+wait 2
+shot hits2
+snap aegis hits
+wait 2
+spawn p2 BoomerSpider 1 3
+wait 4
+snap blast
+shot blast
+wait 2
+map p1 on
+wait 1
+mapcheck
+shot map_p1
+map p2 on
+wait 1
+mapcheck
+shot map_both
+map p1 off
+wait 1
+mapcheck
+shot map_p2
+map p2 off
+wait 1
+quit

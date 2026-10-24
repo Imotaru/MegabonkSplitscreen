@@ -1,0 +1,32 @@
+# Defensive tomes' effects (no god mode): Armor, Evasion, Thorns x3 for both, 3 skeletons each, no weapons
+chars Monke Monke
+wait 2
+open
+wait 1
+unweapon p1 Bananarang
+unweapon p2 Bananarang
+tome p1 Health 4
+tome p2 Health 4
+tome p1 Armor 3
+tome p2 Armor 3
+tome p1 Evasion 3
+tome p2 Evasion 3
+tome p1 Thorns 3
+tome p2 Thorns 3
+wait 2
+stat p1 Armor
+stat p2 Armor
+stat p1 Evasion
+stat p2 Evasion
+stat p1 Thorns
+stat p2 Thorns
+clear
+snap before
+spawn p1 Skeleton 3 3
+spawn p2 Skeleton 3 3
+wait 3
+shot defense
+wait 4
+snap after
+dmg thorns
+quit

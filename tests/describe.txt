@@ -1,0 +1,7 @@
+# Death pieces 5/6: the charge shrine's and the spawn portal's make-up (names, materials, shader properties)
+chars Monke Monke
+wait 3
+describe ChargeShrine
+describe PlayerSpawnPortal
+describe PortalArrow
+quit

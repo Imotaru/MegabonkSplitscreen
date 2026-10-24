@@ -1,0 +1,27 @@
+# User (v0.49.3): P1 was extremely slow at round start until P2 died. P1 walks 3 s with P2 alive (P2's health tick
+# runs every frame), then with P2 holding an item (P2's item ticks too) - distance from the snaps.
+chars Monke Monke
+wait 2
+godp1
+godp2
+open
+clear
+clearloot
+nopowerups
+place 20
+wait 1
+snap a
+go p1 1 0
+wait 3
+stop p1
+snap b
+wait 0.5
+item p2 Beer
+item p2 SpikyShield
+wait 0.5
+snap c
+go p1 -1 0
+wait 3
+stop p1
+snap d
+quit

@@ -1,0 +1,33 @@
+﻿chars Monke Megachad tier 1 map Forest
+# User: on level-up / reward screens, make the inventory and stats panels on the other half bigger. P1's level-up
+# (panels on the right half), then P2's (panels on the left half), then P2's Moai (reward screen); a screenshot each.
+wait 2
+godp1
+godp2
+xp on
+open
+clear
+clearloot
+nopowerups
+place 40
+wait 1
+addxp p1 40
+wait 2
+wait 1.5
+shot reward_p1_levelup
+pickoffer 0
+wait 1.5
+addxp p2 40
+wait 2
+wait 1.5
+shot reward_p2_levelup
+pickoffer 0
+wait 1.5
+moai p2
+wait 1
+p2interact
+wait 1.5
+shot reward_p2_moai
+pickoffer 0
+wait 1
+quit

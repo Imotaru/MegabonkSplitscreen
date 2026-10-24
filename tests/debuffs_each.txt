@@ -1,0 +1,116 @@
+chars Monke Monke
+# User: the 30000 damage was a poison debuff, P2 has none - find all debuffs and test each one.
+# Each player debuff (EStatusEffect Slow, Freeze, Bleed, Poison, BossPoison) put on P1 alone, then on P2 alone, through
+# the game's own PlayerStatusEffects function: statuses (both lists, HP, speed, MoveSpeedMultiplier) right after and
+# later; the [watch] log has every HP change. Players 40 m apart, no enemies, standing still.
+wait 2
+godp1
+godp2
+open
+clear
+clearloot
+nopowerups
+home
+debuffsources
+wait 1
+# ---- Slow on p1
+clear
+statuses
+debuff p1 Slow 4
+wait 0.5
+statuses
+wait 2
+statuses
+wait 2.5
+statuses
+# ---- Slow on p2
+clear
+statuses
+debuff p2 Slow 4
+wait 0.5
+statuses
+wait 2
+statuses
+wait 2.5
+statuses
+# ---- Freeze on p1
+clear
+statuses
+debuff p1 Freeze 4
+wait 0.5
+statuses
+wait 2
+statuses
+wait 2.5
+statuses
+# ---- Freeze on p2
+clear
+statuses
+debuff p2 Freeze 4
+wait 0.5
+statuses
+wait 2
+statuses
+wait 2.5
+statuses
+# ---- Bleed on p1
+clear
+statuses
+debuff p1 Bleed 4
+wait 0.5
+statuses
+wait 2
+statuses
+wait 2.5
+statuses
+# ---- Bleed on p2
+clear
+statuses
+debuff p2 Bleed 4
+wait 0.5
+statuses
+wait 2
+statuses
+wait 2.5
+statuses
+# ---- Poison on p1
+clear
+statuses
+debuff p1 Poison 4
+wait 0.5
+statuses
+wait 2
+statuses
+wait 2.5
+statuses
+# ---- Poison on p2
+clear
+statuses
+debuff p2 Poison 4
+wait 0.5
+statuses
+wait 2
+statuses
+wait 2.5
+statuses
+# ---- BossPoison on p1
+clear
+statuses
+debuff p1 BossPoison 4
+wait 0.5
+statuses
+wait 2
+statuses
+wait 2.5
+statuses
+# ---- BossPoison on p2
+clear
+statuses
+debuff p2 BossPoison 4
+wait 0.5
+statuses
+wait 2
+statuses
+wait 2.5
+statuses
+quit

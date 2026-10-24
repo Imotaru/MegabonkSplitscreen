@@ -1,0 +1,18 @@
+# Chaos tome (random stats): P2 alone first (P1 must not change), then P1 alone (P2 must not change), then both
+chars Monke Monke
+godp1
+godp2
+wait 2
+mark
+tome p2 Chaos
+wait 1.5
+delta chaos P2 only
+mark
+tome p1 Chaos
+wait 1.5
+delta chaos P1 only
+mark
+tome p2 Chaos 3
+wait 1.5
+delta chaos P2 x3
+quit

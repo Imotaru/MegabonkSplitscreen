@@ -1,0 +1,23 @@
+menuscript
+# User: P2's skin row shows only the skins P2 may use (bought / free), not locked or not-yet-bought ones. Megachad has
+# two usable (Default, Giga), Monke one (Default; Street and Fire are unlocked but not bought). 'skins' lists the
+# save's state and P2's row; the screenshot shows P2's row for Megachad.
+menustate
+waitselected B_Play 20
+p1press
+wait 2
+p2join
+wait 1.5
+lobbyconfirm
+wait 1.5
+p1pick Megachad
+p2press dpad right
+wait 0.4
+p2press a
+wait 1
+skins Megachad
+skins Monke
+skins Calcium
+menustate
+shot skins_row_megachad
+quit

@@ -1,0 +1,20 @@
+# User: P1's shield upgrades were slow to apply (v0.46.4 muted the stat event during P2's recompute). P1 takes
+# Shield tomes; P1's max shield must follow at once. P2 a different character (recomputes differ).
+chars Monke Calcium
+wait 2
+open
+wait 1
+clear
+clearloot
+shield
+tome p1 Shield 1
+wait 0.3
+shield
+wait 1
+shield
+tome p1 Shield 1
+wait 0.3
+shield
+wait 1
+shield
+quit

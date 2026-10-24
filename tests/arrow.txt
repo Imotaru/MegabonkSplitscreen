@@ -1,0 +1,29 @@
+# The revive arrow: points down over the gravestone when it's on screen, and towards it at the edge when it isn't
+# (P2 down, P1 walks out of the zone, then P1's camera turns so the stone is ahead, to the side, behind)
+chars Monke Monke
+wait 2
+godp1
+godp2
+open
+wait 1
+clear
+clearloot
+place
+wait 1
+kill p2
+wait 0.5
+go p1 1 0
+wait 3
+stop p1
+wait 0.5
+shot arrow_a
+turn p1 90
+wait 0.8
+shot arrow_b
+turn p1 90
+wait 0.8
+shot arrow_c
+turn p1 90
+wait 0.8
+shot arrow_d
+quit

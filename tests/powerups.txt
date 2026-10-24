@@ -1,0 +1,66 @@
+# Every power-up dropped at each player's feet: what each player gets, with a screenshot as it is collected
+chars Monke Monke
+wait 2
+open
+wait 1
+clear
+hurt p1 60
+hurt p2 60
+snap start
+pickup p1 Health
+pickup p2 Health
+wait 0.6
+shot pu_health
+wait 1.5
+snap health
+clear
+pickup p1 Shield
+pickup p2 Shield
+wait 0.6
+shot pu_shield
+wait 1.5
+snap shield
+clear
+mark
+pickup p1 Haste
+pickup p2 Haste
+wait 0.6
+shot pu_haste
+wait 1.5
+delta haste
+clear
+mark
+pickup p1 Rage
+pickup p2 Rage
+wait 0.6
+shot pu_rage
+wait 1.5
+delta rage
+clear
+mark
+pickup p1 Stonks
+pickup p2 Stonks
+wait 0.6
+shot pu_stonks
+wait 1.5
+delta stonks
+snap stonks
+clear
+pickup p2 Time
+wait 0.6
+shot pu_time
+wait 4
+spawn p1 Skeleton 4 8
+spawn p2 Skeleton 4 8
+wait 1
+pickup p2 Nuke
+wait 0.6
+shot pu_nuke
+wait 1.5
+dmg nuke
+clear
+pickup p2 Magnet
+wait 0.6
+shot pu_magnet
+wait 2
+quit

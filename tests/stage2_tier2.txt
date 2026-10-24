@@ -1,0 +1,52 @@
+chars Monke Fox tier 2
+# Tier 2 (user: a tier 1 run ends after its boss - no stage 2). User: we only tested stage 1 of tier 1 - what happens after the players pass stage 1 and go through the portal.
+# Both players get something to carry over (gold, an item, a weapon). P1 uses the boss altar, the boss(es) die, the
+# game opens the exit portal, P1 walks into it and interacts. Stage 2: stagestate (P2's body, control, camera, health,
+# items, gold kept?), P2's portal entrance, both move, screenshots on the way.
+wait 2
+godp1
+godp2
+open
+clear
+clearloot
+nopowerups
+givegold p1 300
+givegold p2 200
+item p1 Ghost
+item p2 CreditCardRed
+weapon p2 Shotgun
+wait 1
+gold
+stagestate
+shot stage1
+toportal p1
+wait 1
+p1interact
+wait 4
+stagestate
+killbosses
+wait 3
+stagestate
+toportal p1 far
+wait 1
+toportal p1
+wait 1
+shot portal
+p1interact
+wait 4
+stagestate
+shot loading
+wait 10
+stagestate
+shot stage2_arrive
+wait 8
+stagestate
+go p1 1 0
+go p2 1 0
+wait 2
+go p1 0 0
+go p2 0 0
+stagestate
+gold
+shot stage2_moved
+quit

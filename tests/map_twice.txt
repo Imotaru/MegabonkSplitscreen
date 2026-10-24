@@ -1,0 +1,61 @@
+chars Monke Fox tier 1 map Forest
+# User: P2 opens the map once fine, the second time it gets stuck; and a player dying with the map open may leave it on
+# screen for the one still alive. mapcheck = each panel shown, the game's open-map count, whether P2 holds one.
+wait 2
+godp1
+godp2
+open
+clear
+clearloot
+nopowerups
+place 70
+wait 2
+# ---- P2 twice
+map p2 on
+wait 1
+mapcheck
+map p2 off
+wait 1
+mapcheck
+map p2 on
+wait 1
+mapcheck
+shot map2_p2_second
+map p2 off
+wait 1
+mapcheck
+shot map2_p2_closed
+# ---- P1 twice
+map p1 on
+wait 1
+mapcheck
+map p1 off
+wait 1
+map p1 on
+wait 1
+map p1 off
+wait 1
+mapcheck
+# ---- P2 goes down with the map open
+map p2 on
+wait 1
+kill p2
+wait 1.5
+mapcheck
+map p2 off
+wait 1
+mapcheck
+shot map2_p2_down
+revive p2
+wait 3
+# ---- P1 goes down with the map open
+map p1 on
+wait 1
+kill p1
+wait 2
+mapcheck
+shot map2_p1_down
+revive p1
+wait 3
+mapcheck
+quit

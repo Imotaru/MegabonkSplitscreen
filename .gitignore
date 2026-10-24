@@ -1,0 +1,21 @@
+# Build output: the release zip is published as a GitHub Release, not committed
+bin/
+obj/
+dist/
+
+# Logs can contain Steam ids / local paths
+*.log
+
+# Data dumped from Megabonk's own code (type lists) - not ours to publish
+notes/types/
+
+# Internal working notes for the next Claude session
+HANDOFF.md
+
+# An empty repo GitKraken made by mistake (safe to delete)
+SplitBonk/
+
+# Local editor and Claude Code settings
+.vs/
+.vscode/
+.claude/

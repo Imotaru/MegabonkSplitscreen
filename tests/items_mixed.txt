@@ -1,0 +1,399 @@
+﻿# Mixed check of the new item scenarios (stat, fight, hurt, move, still) and P2's item effect copies
+chars Monke Monke
+wait 2
+godp1
+godp2
+open
+clear
+clearloot
+nopowerups
+wait 1
+log GymSauce (stat)
+home
+wait 0
+clear
+wait 1.5
+isnap GymSauce.A0
+item p1 GymSauce
+wait 1
+isnap GymSauce.A1
+wait 1
+wait 0
+wait 0.5
+isnap GymSauce.A2
+unitem p1 GymSauce
+clear
+wait 1
+home
+swap
+clear
+wait 1.5
+isnap GymSauce.B0
+item p2 GymSauce
+wait 1
+isnap GymSauce.B1
+wait 1
+shot fx_GymSauce
+wait 0.5
+isnap GymSauce.B2
+unitem p2 GymSauce
+clear
+wait 1
+icheck GymSauce
+log Bonker (fight)
+home
+wait 0
+clear
+wait 1.5
+isnap Bonker.A0
+item p1 Bonker
+wait 1
+isnap Bonker.A1
+spawn p1 Skeleton 8 5
+wait 3
+wait 0
+wait 3
+isnap Bonker.A2
+unitem p1 Bonker
+clear
+wait 1
+home
+swap
+clear
+wait 1.5
+isnap Bonker.B0
+item p2 Bonker
+wait 1
+isnap Bonker.B1
+spawn p2 Skeleton 8 5
+wait 3
+shot fx_Bonker
+wait 3
+isnap Bonker.B2
+unitem p2 Bonker
+clear
+wait 1
+icheck Bonker
+log SpikyShield (hurt)
+home
+wait 0
+clear
+wait 1.5
+isnap SpikyShield.A0
+item p1 SpikyShield
+wait 1
+isnap SpikyShield.A1
+spawn p1 Skeleton 5 6
+hurt p1 300
+hurt p2 300
+wait 1.5
+hurt p1 300
+hurt p2 300
+wait 1.5
+wait 0
+hurt p1 300
+hurt p2 300
+wait 2
+isnap SpikyShield.A2
+unitem p1 SpikyShield
+clear
+wait 1
+home
+swap
+clear
+wait 1.5
+isnap SpikyShield.B0
+item p2 SpikyShield
+wait 1
+isnap SpikyShield.B1
+spawn p2 Skeleton 5 6
+hurt p1 300
+hurt p2 300
+wait 1.5
+hurt p1 300
+hurt p2 300
+wait 1.5
+shot fx_SpikyShield
+hurt p1 300
+hurt p2 300
+wait 2
+isnap SpikyShield.B2
+unitem p2 SpikyShield
+clear
+wait 1
+icheck SpikyShield
+log HolyBook (hurt)
+home
+wait 0
+clear
+wait 1.5
+isnap HolyBook.A0
+item p1 HolyBook
+wait 1
+isnap HolyBook.A1
+spawn p1 Skeleton 5 6
+hurt p1 300
+hurt p2 300
+wait 1.5
+hurt p1 300
+hurt p2 300
+wait 1.5
+wait 0
+hurt p1 300
+hurt p2 300
+wait 2
+isnap HolyBook.A2
+unitem p1 HolyBook
+clear
+wait 1
+home
+swap
+clear
+wait 1.5
+isnap HolyBook.B0
+item p2 HolyBook
+wait 1
+isnap HolyBook.B1
+spawn p2 Skeleton 5 6
+hurt p1 300
+hurt p2 300
+wait 1.5
+hurt p1 300
+hurt p2 300
+wait 1.5
+shot fx_HolyBook
+hurt p1 300
+hurt p2 300
+wait 2
+isnap HolyBook.B2
+unitem p2 HolyBook
+clear
+wait 1
+icheck HolyBook
+log Mirror (hurt)
+home
+wait 0
+clear
+wait 1.5
+isnap Mirror.A0
+item p1 Mirror
+wait 1
+isnap Mirror.A1
+spawn p1 Skeleton 5 6
+hurt p1 300
+hurt p2 300
+wait 1.5
+hurt p1 300
+hurt p2 300
+wait 1.5
+wait 0
+hurt p1 300
+hurt p2 300
+wait 2
+isnap Mirror.A2
+unitem p1 Mirror
+clear
+wait 1
+home
+swap
+clear
+wait 1.5
+isnap Mirror.B0
+item p2 Mirror
+wait 1
+isnap Mirror.B1
+spawn p2 Skeleton 5 6
+hurt p1 300
+hurt p2 300
+wait 1.5
+hurt p1 300
+hurt p2 300
+wait 1.5
+shot fx_Mirror
+hurt p1 300
+hurt p2 300
+wait 2
+isnap Mirror.B2
+unitem p2 Mirror
+clear
+wait 1
+icheck Mirror
+log ToxicBarrel (hurt)
+home
+wait 0
+clear
+wait 1.5
+isnap ToxicBarrel.A0
+item p1 ToxicBarrel
+wait 1
+isnap ToxicBarrel.A1
+spawn p1 Skeleton 5 6
+hurt p1 300
+hurt p2 300
+wait 1.5
+hurt p1 300
+hurt p2 300
+wait 1.5
+wait 0
+hurt p1 300
+hurt p2 300
+wait 2
+isnap ToxicBarrel.A2
+unitem p1 ToxicBarrel
+clear
+wait 1
+home
+swap
+clear
+wait 1.5
+isnap ToxicBarrel.B0
+item p2 ToxicBarrel
+wait 1
+isnap ToxicBarrel.B1
+spawn p2 Skeleton 5 6
+hurt p1 300
+hurt p2 300
+wait 1.5
+hurt p1 300
+hurt p2 300
+wait 1.5
+shot fx_ToxicBarrel
+hurt p1 300
+hurt p2 300
+wait 2
+isnap ToxicBarrel.B2
+unitem p2 ToxicBarrel
+clear
+wait 1
+icheck ToxicBarrel
+log ElectricPlug (hurt)
+home
+wait 0
+clear
+wait 1.5
+isnap ElectricPlug.A0
+item p1 ElectricPlug
+wait 1
+isnap ElectricPlug.A1
+spawn p1 Skeleton 5 6
+hurt p1 300
+hurt p2 300
+wait 1.5
+hurt p1 300
+hurt p2 300
+wait 1.5
+wait 0
+hurt p1 300
+hurt p2 300
+wait 2
+isnap ElectricPlug.A2
+unitem p1 ElectricPlug
+clear
+wait 1
+home
+swap
+clear
+wait 1.5
+isnap ElectricPlug.B0
+item p2 ElectricPlug
+wait 1
+isnap ElectricPlug.B1
+spawn p2 Skeleton 5 6
+hurt p1 300
+hurt p2 300
+wait 1.5
+hurt p1 300
+hurt p2 300
+wait 1.5
+shot fx_ElectricPlug
+hurt p1 300
+hurt p2 300
+wait 2
+isnap ElectricPlug.B2
+unitem p2 ElectricPlug
+clear
+wait 1
+icheck ElectricPlug
+log Scarf (move)
+home
+wait 0
+clear
+wait 1.5
+isnap Scarf.A0
+item p1 Scarf
+wait 1
+isnap Scarf.A1
+go p1 1 0
+jump p1
+wait 1.5
+jump p1
+wait 1.5
+wait 0
+go p1 -1 0
+jump p1
+wait 1.5
+jump p1
+wait 1.5
+stop p1
+isnap Scarf.A2
+unitem p1 Scarf
+clear
+wait 1
+home
+swap
+clear
+wait 1.5
+isnap Scarf.B0
+item p2 Scarf
+wait 1
+isnap Scarf.B1
+go p2 1 0
+jump p2
+wait 1.5
+jump p2
+wait 1.5
+shot fx_Scarf
+go p2 -1 0
+jump p2
+wait 1.5
+jump p2
+wait 1.5
+stop p2
+isnap Scarf.B2
+unitem p2 Scarf
+clear
+wait 1
+icheck Scarf
+log Campfire (still)
+home
+wait 0
+clear
+wait 1.5
+isnap Campfire.A0
+item p1 Campfire
+wait 1
+isnap Campfire.A1
+wait 4
+wait 0
+wait 4
+isnap Campfire.A2
+unitem p1 Campfire
+clear
+wait 1
+home
+swap
+clear
+wait 1.5
+isnap Campfire.B0
+item p2 Campfire
+wait 1
+isnap Campfire.B1
+wait 4
+shot fx_Campfire
+wait 4
+isnap Campfire.B2
+unitem p2 Campfire
+clear
+wait 1
+icheck Campfire
+quit

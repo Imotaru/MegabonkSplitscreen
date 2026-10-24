@@ -1,0 +1,222 @@
+﻿chars Monke Monke
+godp1
+godp2
+wait 2
+open
+wait 3
+wait 1
+unweapon p1 Bananarang
+unweapon p2 Bananarang
+wait 1
+# weapon sweep part 1
+clear
+weapon p1 FireStaff
+weapon p2 FireStaff
+wait 1
+wcompare FireStaff
+dmg reset
+spawn p1 Skeleton 6 5
+spawn p2 Skeleton 6 5
+wait 5
+shot w_FireStaff
+wait 1
+dmg FireStaff
+unweapon p1 FireStaff
+unweapon p2 FireStaff
+clear
+weapon p1 Bone
+weapon p2 Bone
+wait 1
+wcompare Bone
+dmg reset
+spawn p1 Skeleton 6 5
+spawn p2 Skeleton 6 5
+wait 5
+shot w_Bone
+wait 1
+dmg Bone
+unweapon p1 Bone
+unweapon p2 Bone
+clear
+weapon p1 Sword
+weapon p2 Sword
+wait 1
+wcompare Sword
+dmg reset
+spawn p1 Skeleton 6 5
+spawn p2 Skeleton 6 5
+wait 5
+shot w_Sword
+wait 1
+dmg Sword
+unweapon p1 Sword
+unweapon p2 Sword
+clear
+weapon p1 Revolver
+weapon p2 Revolver
+wait 1
+wcompare Revolver
+dmg reset
+spawn p1 Skeleton 6 5
+spawn p2 Skeleton 6 5
+wait 5
+shot w_Revolver
+wait 1
+dmg Revolver
+unweapon p1 Revolver
+unweapon p2 Revolver
+clear
+weapon p1 Aura
+weapon p2 Aura
+wait 1
+wcompare Aura
+dmg reset
+spawn p1 Skeleton 6 5
+spawn p2 Skeleton 6 5
+wait 5
+shot w_Aura
+wait 1
+dmg Aura
+unweapon p1 Aura
+unweapon p2 Aura
+clear
+weapon p1 Axe
+weapon p2 Axe
+wait 1
+wcompare Axe
+dmg reset
+spawn p1 Skeleton 6 5
+spawn p2 Skeleton 6 5
+wait 5
+shot w_Axe
+wait 1
+dmg Axe
+unweapon p1 Axe
+unweapon p2 Axe
+clear
+weapon p1 Bow
+weapon p2 Bow
+wait 1
+wcompare Bow
+dmg reset
+spawn p1 Skeleton 6 5
+spawn p2 Skeleton 6 5
+wait 5
+shot w_Bow
+wait 1
+dmg Bow
+unweapon p1 Bow
+unweapon p2 Bow
+clear
+weapon p1 Aegis
+weapon p2 Aegis
+wait 1
+wcompare Aegis
+dmg reset
+spawn p1 Skeleton 6 5
+spawn p2 Skeleton 6 5
+wait 5
+shot w_Aegis
+wait 1
+dmg Aegis
+unweapon p1 Aegis
+unweapon p2 Aegis
+clear
+weapon p1 LightningStaff
+weapon p2 LightningStaff
+wait 1
+wcompare LightningStaff
+dmg reset
+spawn p1 Skeleton 6 5
+spawn p2 Skeleton 6 5
+wait 5
+shot w_LightningStaff
+wait 1
+dmg LightningStaff
+unweapon p1 LightningStaff
+unweapon p2 LightningStaff
+clear
+weapon p1 Flamewalker
+weapon p2 Flamewalker
+wait 1
+wcompare Flamewalker
+dmg reset
+spawn p1 Skeleton 6 5
+spawn p2 Skeleton 6 5
+wait 5
+shot w_Flamewalker
+wait 1
+dmg Flamewalker
+unweapon p1 Flamewalker
+unweapon p2 Flamewalker
+clear
+weapon p1 Rockets
+weapon p2 Rockets
+wait 1
+wcompare Rockets
+dmg reset
+spawn p1 Skeleton 6 5
+spawn p2 Skeleton 6 5
+wait 5
+shot w_Rockets
+wait 1
+dmg Rockets
+unweapon p1 Rockets
+unweapon p2 Rockets
+clear
+weapon p1 Bananarang
+weapon p2 Bananarang
+wait 1
+wcompare Bananarang
+dmg reset
+spawn p1 Skeleton 6 5
+spawn p2 Skeleton 6 5
+wait 5
+shot w_Bananarang
+wait 1
+dmg Bananarang
+unweapon p1 Bananarang
+unweapon p2 Bananarang
+clear
+weapon p1 Tornado
+weapon p2 Tornado
+wait 1
+wcompare Tornado
+dmg reset
+spawn p1 Skeleton 6 5
+spawn p2 Skeleton 6 5
+wait 5
+shot w_Tornado
+wait 1
+dmg Tornado
+unweapon p1 Tornado
+unweapon p2 Tornado
+clear
+weapon p1 Dexecutioner
+weapon p2 Dexecutioner
+wait 1
+wcompare Dexecutioner
+dmg reset
+spawn p1 Skeleton 6 5
+spawn p2 Skeleton 6 5
+wait 5
+shot w_Dexecutioner
+wait 1
+dmg Dexecutioner
+unweapon p1 Dexecutioner
+unweapon p2 Dexecutioner
+clear
+weapon p1 Sniper
+weapon p2 Sniper
+wait 1
+wcompare Sniper
+dmg reset
+spawn p1 Skeleton 6 5
+spawn p2 Skeleton 6 5
+wait 5
+shot w_Sniper
+wait 1
+dmg Sniper
+unweapon p1 Sniper
+unweapon p2 Sniper
+quit

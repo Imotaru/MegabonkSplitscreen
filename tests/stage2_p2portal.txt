@@ -1,0 +1,81 @@
+chars Monke Fox tier 2 map Forest
+# Forest, tier 2 (user: try it on the forest map; a tier 1 run ends after its boss). P2 does the stage end: P2 uses the boss altar, the boss dies, P2 walks
+# into the exit portal and interacts. Stage 2: stagestate (both players, P2's things kept). Also: P1's gold read
+# after both players level up (levels picked with 'pickoffer'; a screen left open pauses the game). Levels,
+# weapon levels, items and gold must be the same in stage 2.
+wait 2
+godp1
+godp2
+open
+clear
+clearloot
+nopowerups
+givegold p1 300
+givegold p2 200
+item p1 Ghost
+item p2 CreditCardRed
+weapon p2 Shotgun
+wait 1
+gold
+xp on
+addxp p1 60
+addxp p2 60
+wait 1
+pickoffer
+wait 1
+pickoffer
+wait 1
+pickoffer
+wait 1
+pickoffer
+wait 1
+pickoffer
+wait 1
+pickoffer
+wait 1
+pickoffer
+wait 1
+pickoffer
+wait 1
+pickoffer
+wait 1
+pickoffer
+wait 1
+pickoffer
+wait 1
+pickoffer
+wait 1
+xp off
+gold
+stagestate
+toportal p2
+wait 1
+p2interact
+wait 2
+# user: P2 could summon the boss over and over - a second press on the used altar must not summon again
+p2interact
+wait 2
+stagestate
+killbosses
+wait 3
+toportal p2 far
+wait 1
+toportal p2
+wait 1
+shot p2portal
+p2interact
+wait 4
+stagestate
+wait 10
+stagestate
+shot p2stage2_arrive
+wait 8
+go p1 1 0
+go p2 1 0
+wait 2
+go p1 0 0
+go p2 0 0
+stagestate
+gold
+shot p2stage2_moved
+quit

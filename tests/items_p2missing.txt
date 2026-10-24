@@ -1,0 +1,39 @@
+﻿# Items whose effect was missing for P2 in the v0.49 sweep: Shattered Wisdom (P1 64 / P2 0), Slutty Cannon (P1 72 /
+# P2 0); P1's Bonker / Lightning Gloves (P1 0: P1's reused bananas counted as P2's - fixed). Their own fields and the
+# XP orbs' damage parts are logged with P1 and with P2 holding them; players 18 m apart.
+chars Monke Monke
+wait 2
+godp1
+godp2
+open
+clear
+clearloot
+nopowerups
+place 18
+wait 1
+item p1 ShatteredWisdom
+item p1 SluttyCannon
+item p1 Bonker
+spawn p1 Skeleton 12 5
+wait 12
+iteminfo p1 ShatteredWisdom
+iteminfo p1 SluttyCannon
+iteminfo p1 Bonker
+xpdamagers
+dmgsources
+unitem p1 ShatteredWisdom
+unitem p1 SluttyCannon
+unitem p1 Bonker
+clear
+wait 1
+item p2 ShatteredWisdom
+item p2 SluttyCannon
+item p2 Bonker
+spawn p2 Skeleton 12 5
+wait 12
+iteminfo p2 ShatteredWisdom
+iteminfo p2 SluttyCannon
+iteminfo p2 Bonker
+xpdamagers
+dmgsources
+quit

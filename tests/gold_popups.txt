@@ -1,0 +1,36 @@
+chars Monke Fox tier 1 map Forest
+# User: the $gold popup showed for P1 on P2's screen - one for P2, P1's moved. Players 70 m apart (split). Skeletons by P1
+# first (P1's popup on P1's half), then by P2 (P2's popup on P2's half, P1's not counting it). goldpopups = both popups.
+wait 2
+godp1
+godp2
+open
+clear
+clearloot
+nopowerups
+place 70
+wait 2
+goldpopups
+spawn p1 Skeleton 6 4
+wait 3
+goldpopups
+shot gold_p1
+wait 1
+goldpopups
+shot gold_p1b
+wait 1
+goldpopups
+shot gold_p1c
+clear
+wait 4
+spawn p2 Skeleton 6 4
+wait 3
+goldpopups
+wait 2
+goldpopups
+shot gold_p2
+wait 2
+goldpopups
+shot gold_p2b
+gold
+quit

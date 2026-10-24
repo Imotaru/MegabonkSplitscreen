@@ -1,0 +1,19 @@
+chars Megachad Megachad tier 1 map Forest
+# User: P2's stats in the map panel don't match P1's although both are the same character. Run start, no upgrades:
+# every stat where P1's (the game's) and P2's (P2's own table) differ; then both map panels (screenshot).
+wait 2
+open
+clear
+clearloot
+nopowerups
+wait 1
+statcompare start
+place 70
+wait 2
+map p1 on
+map p2 on
+wait 1.5
+shot stats_panels
+map p1 off
+map p2 off
+quit

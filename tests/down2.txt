@@ -1,0 +1,29 @@
+# Death piece 2: a gravestone where a player went down (seen by the other player), bursting on the revive
+chars Monke Monke
+wait 2
+godp2
+open
+wait 1
+clear
+place
+wait 1
+kill p1
+wait 1
+go p2 -1 0
+wait 1.2
+stop p2
+wait 0.5
+shot grave_p1
+revive p1
+wait 0.15
+shot grave_p1_burst
+wait 1
+godp1
+kill p2
+wait 1.5
+shot grave_p2
+revive p2
+wait 0.15
+shot grave_p2_burst
+wait 1
+quit
