@@ -302,7 +302,8 @@ internal static class PlayerJoin
     private static bool p1Known;
 
     // P1 not known yet: a pad pressing anything but Start is P1 (it's driving the game's menu). Start = joining: with
-    // exactly one other pad, that one is P1 and this one joins as P2; a lone pad pressing Start is P1.
+    // exactly one other pad, that one is P1 and this one joins as P2; a lone pad pressing Start joins as P2 with P1 on
+    // keyboard/mouse (P1 clicked Play with the mouse, so no pad press was seen).
     // Returns true when P2 joined.
     private static bool DecideP1(Joystick joy, bool start)
     {
@@ -313,6 +314,16 @@ internal static class PlayerJoin
             foreach (var j in ReInput.controllers.GetJoysticks())
                 if (j != null && j.id != joy.id) others.Add(j);
             if (others.Count == 1) p1 = others[0];
+            else if (others.Count == 0)
+            {
+                // Lone pad pressing Start: P1 is on keyboard/mouse, this pad joins as P2
+                p1Known = true;
+                p1Type = ControllerType.Keyboard;
+                p1Id = -1;
+                ModLog.Info($"Player 1 decided: keyboard/mouse (lone pad {Describe(joy)} pressed Start to join)");
+                Register(joy);
+                return true;
+            }
         }
         p1Known = true;
         p1Type = p1.type;
