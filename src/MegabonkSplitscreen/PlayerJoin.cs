@@ -476,14 +476,16 @@ public class Ticker : MonoBehaviour
         frameWatch.Start();
         try
         {
-            PlayerJoin.Update();
-            MenuLabel.Update();
-            Lobby.Update();
-            CharacterSelectView.Update();
-            FreezeDiag.Update();
-            P2Select.Update();
-            P2Body.Update();
-            Autotest.Update();
+            // Each on its own guard (user, keyboard P1: a MenuLabel error skipped everything after it for the frame,
+            // and the one-log-per-message rule hid any later error with the same message)
+            P2Body.Sub("join", PlayerJoin.Update);
+            P2Body.Sub("menu label", MenuLabel.Update);
+            P2Body.Sub("lobby", Lobby.Update);
+            P2Body.Sub("character select view", CharacterSelectView.Update);
+            P2Body.Sub("freeze diag", FreezeDiag.Update);
+            P2Body.Sub("p2 select", P2Select.Update);
+            P2Body.Update();   // guards each of its parts itself
+            P2Body.Sub("autotest", Autotest.Update);
         }
         catch (Exception e)
         {

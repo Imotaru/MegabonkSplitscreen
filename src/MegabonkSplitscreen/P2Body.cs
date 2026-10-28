@@ -43,6 +43,10 @@ internal static class P2Body
 
     // P1 / recording
     private static SpawnPlayerPortal portal;
+    // Read from the portal at StartPortal, while it surely exists (user, keyboard P1 + pad P2: the portal object was
+    // gone by +2 s, StartP2 returned silently every frame and P2 never appeared)
+    private static Vector3 portalWalk;
+    private static bool portalGoneLogged, p1ModelLostLogged;
     private static bool recording;
     public static bool IsRecording => recording;
     private static float recordStart;
@@ -90,6 +94,9 @@ internal static class P2Body
         try { Downed.OnStageStart(); }
         catch (Exception e) { ModLog.Error($"[down] new stage revive failed: {e}"); }
         portal = __instance;
+        portalWalk = __instance.desiredPosition - __instance.playerStartPosition;
+        portalWalk.y = 0f;
+        portalGoneLogged = p1ModelLostLogged = false;
         recording = true;
         recordStart = Time.time;
         p1OpenedAt = p1ClosedAt = -1f;
@@ -191,7 +198,17 @@ internal static class P2Body
         if (p1Model == null)
         {
             var pr = MyPlayer.Instance != null ? MyPlayer.Instance.playerRenderer : null;
-            if (pr == null || pr.rendererObject == null) return;   // P1 not built yet
+            if (pr == null || pr.rendererObject == null)
+            {
+                // P1 not built yet - or P1's model went away after recording started (nothing records then)
+                if (samples.Count > 0 && !p1ModelLostLogged)
+                {
+                    p1ModelLostLogged = true;
+                    ModLog.Warn($"P2Body: P1's model is gone at +{t:F2} s (MyPlayer {(MyPlayer.Instance != null ? "ok" : "none")}, " +
+                                $"playerRenderer {(pr != null ? "ok" : "none")}, rendererObject none) - P2's entrance waits for it");
+                }
+                return;
+            }
             p1Model = pr.rendererObject.transform;
             p1Anim = pr.animator;
             ReadP1Params();
@@ -215,6 +232,16 @@ internal static class P2Body
         {
             p1ClosedAt = t;
             ModLog.Info($"P1 portal closed at +{t:F2} s");
+        }
+        // The portal object itself gone: counts as closed, so the recording still ends
+        if (portal == null && p1ClosedAt < 0f)
+        {
+            p1ClosedAt = t;
+            if (!portalGoneLogged)
+            {
+                portalGoneLogged = true;
+                ModLog.Warn($"P2Body: P1's spawn portal object is gone at +{t:F2} s (was open: {p1OpenedAt >= 0f}) - counted as closed");
+            }
         }
 
         var s = new Sample { t = t, pos = p1Model.position, rot = p1Model.rotation };
@@ -244,7 +271,8 @@ internal static class P2Body
         // P2's portal opens Delay seconds after P1's started
         if (p2Portal == null && body == null && t >= Delay) StartP2();
 
-        bool done = (p1ClosedAt >= 0f && t - p1ClosedAt > RecordAfterClose) || t > MaxRecordTime;
+        // Not before P2's entrance has started (StartP2 only runs while recording; P1's portal may close early)
+        bool done = (body != null && p1ClosedAt >= 0f && t - p1ClosedAt > RecordAfterClose) || t > MaxRecordTime;
         if (done)
         {
             recording = false;
@@ -280,7 +308,7 @@ internal static class P2Body
 
     private static void StartP2()
     {
-        if (portal == null || samples.Count == 0) return;
+        if (samples.Count == 0) return;
         var pr = MyPlayer.Instance != null ? MyPlayer.Instance.playerRenderer : null;
         var data = P2Select.Picked ?? (pr != null ? pr.characterData : null);
         if (data == null || data.prefab == null)
@@ -291,7 +319,8 @@ internal static class P2Body
         }
 
         // Sideways: across P1's walking direction, on the camera's right side
-        Vector3 walk = portal.desiredPosition - portal.playerStartPosition;
+        bool portalAlive = portal != null;
+        Vector3 walk = portalAlive ? portal.desiredPosition - portal.playerStartPosition : portalWalk;
         walk.y = 0f;
         if (walk.sqrMagnitude < 0.0001f) walk = samples[samples.Count - 1].pos - samples[0].pos;
         walk.y = 0f;
@@ -302,7 +331,9 @@ internal static class P2Body
         // ...and a bit back (against the walking direction) so the two portals don't intersect
         shift = side * PortalSpacing - walk.normalized * PortalBack;
 
-        MakePortal();
+        // No portal to copy: P2 walks in without one (shown at once - see Replay)
+        if (portalAlive) MakePortal();
+        else ModLog.Warn("P2 enters without a portal copy (the game's portal object is gone)");
         MakeBody(data);
         replaying = true;
         cursor = 0;

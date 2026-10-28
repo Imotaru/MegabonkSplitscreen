@@ -24,7 +24,8 @@ internal static class MenuLabel
             if (Time.unscaledTime < nextLook) return;
             nextLook = Time.unscaledTime + 0.5f;
             Make();
-            if (label == null) return;
+            // (menu gone with the label still there - the scene change into a run - was a NullReferenceException)
+            if (label == null || menu == null) return;
         }
         bool show = menu.tabMenu != null ? menu.tabMenu.activeInHierarchy : menu.gameObject.activeInHierarchy;
         if (label.activeSelf != show) label.SetActive(show);
